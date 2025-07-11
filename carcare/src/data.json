@@ -4,196 +4,362 @@
       "id": "g1",
       "name": "Gara An Phát",
       "address": "123 Đường Láng, Đống Đa, Hà Nội",
-      "latitude": 21.0185,
-      "longitude": 105.8048,
+      "latitude": 21.0183,
+      "longitude": 105.8176,
       "phone": "0901234567",
-      "services": ["Thay dầu", "Thay lốp", "Kiểm tra ắc quy"],
+      "services": [
+        "Thay dầu",
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Dầu máy",
+        "Lọc dầu",
+        "Hệ thống phanh",
+        "Lọc gió động cơ",
+        "Gạt mưa: cao su gạt mưa"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.6,
       "status": "open",
-      "availableSlots": ["08:00", "09:00", "10:00", "14:00"],
+      "availableSlots": [
+        "08:00",
+        "09:00",
+        "10:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara1.jpg"
     },
     {
       "id": "g2",
       "name": "Gara Minh Tâm",
       "address": "456 Nguyễn Trãi, Thanh Xuân, Hà Nội",
-      "latitude": 20.9987,
-      "longitude": 105.8152,
+      "latitude": 20.9984,
+      "longitude": 105.8024,
       "phone": "0909876543",
-      "services": ["Sửa động cơ", "Cân bằng lốp", "Sửa điều hòa"],
+      "services": [
+        "Sửa động cơ",
+        "Cân bằng lốp",
+        "Sửa điều hòa",
+        "Dầu hộp số",
+        "Dây đai dẫn động",
+        "Hệ thống lái",
+        "Lọc gió điều hòa"
+      ],
       "openingHours": "07:30-17:30",
       "rating": 4.3,
       "status": "open",
-      "availableSlots": ["09:00", "11:00", "15:00"],
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "15:00"
+      ],
       "imageUrl": "https://example.com/gara2.jpg"
     },
     {
       "id": "g3",
       "name": "Gara Thành Công",
       "address": "789 Giải Phóng, Hoàng Mai, Hà Nội",
-      "latitude": 20.9876,
-      "longitude": 105.8421,
+      "latitude": 20.9916,
+      "longitude": 105.8439,
       "phone": "0912345678",
-      "services": ["Thay phanh", "Kiểm tra ắc quy", "Thay dầu"],
+      "services": [
+        "Thay phanh",
+        "Kiểm tra ắc quy",
+        "Thay dầu",
+        "Lọc dầu",
+        "Dầu phanh",
+        "Gạt mưa: cao su gạt mưa",
+        "Hệ thống làm mát",
+        "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.8,
       "status": "open",
-      "availableSlots": ["08:30", "10:30", "13:00"],
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "13:00"
+      ],
       "imageUrl": "https://example.com/gara3.jpg"
     },
     {
       "id": "g4",
       "name": "Gara Hòa Bình",
       "address": "321 Cầu Giấy, Hà Nội",
-      "latitude": 21.0321,
-      "longitude": 105.7894,
+      "latitude": 21.0332,
+      "longitude": 105.7989,
       "phone": "0923456789",
-      "services": ["Thay lốp", "Sửa điều hòa", "Kiểm tra động cơ"],
+      "services": [
+        "Thay lốp",
+        "Sửa điều hòa",
+        "Kiểm tra động cơ",
+        "Hệ thống điện, điều hòa",
+        "Dầu máy",
+        "Sơn sửa phục hồi",
+        "Cần gạt mưa"
+      ],
       "openingHours": "07:00-17:00",
       "rating": 4.2,
       "status": "closed",
-      "availableSlots": ["09:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara4.jpg"
     },
     {
       "id": "g5",
       "name": "Gara Việt Hưng",
       "address": "654 Kim Mã, Ba Đình, Hà Nội",
-      "latitude": 21.0356,
-      "longitude": 105.8213,
+      "latitude": 21.0343,
+      "longitude": 105.817,
       "phone": "0934567890",
-      "services": ["Thay dầu", "Sửa phanh", "Cân bằng lốp"],
+      "services": [
+        "Thay dầu",
+        "Sửa phanh",
+        "Cân bằng lốp",
+        "Lọc dầu",
+        "Lọc nhiên liệu",
+        "Hệ thống phanh",
+        "Lọc gió điều hòa"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.5,
       "status": "open",
-      "availableSlots": ["08:00", "10:00", "15:00"],
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "15:00"
+      ],
       "imageUrl": "https://example.com/gara5.jpg"
     },
     {
       "id": "g6",
       "name": "Gara Quang Minh",
       "address": "111 Tây Sơn, Đống Đa, Hà Nội",
-      "latitude": 21.0089,
-      "longitude": 105.8245,
+      "latitude": 21.0067,
+      "longitude": 105.8232,
       "phone": "0945678901",
-      "services": ["Sửa động cơ", "Thay lốp", "Kiểm tra ắc quy"],
+      "services": [
+        "Sửa động cơ",
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Hệ thống treo/gầm",
+        "Dầu máy",
+        "Lọc gió điều hòa",
+        "Bugi"
+      ],
       "openingHours": "07:30-17:30",
       "rating": 4.4,
       "status": "open",
-      "availableSlots": ["09:30", "11:30", "14:30"],
+      "availableSlots": [
+        "09:30",
+        "11:30",
+        "14:30"
+      ],
       "imageUrl": "https://example.com/gara6.jpg"
     },
     {
       "id": "g7",
       "name": "Gara Tân Phú",
       "address": "222 Phạm Văn Đồng, Bắc Từ Liêm, Hà Nội",
-      "latitude": 21.0587,
-      "longitude": 105.7812,
+      "latitude": 21.0594,
+      "longitude": 105.7839,
       "phone": "0956789012",
-      "services": ["Thay dầu", "Sửa điều hòa", "Thay phanh"],
+      "services": [
+        "Thay dầu",
+        "Sửa điều hòa",
+        "Thay phanh",
+        "Gạt mưa: cao su gạt mưa",
+        "Hệ thống làm mát",
+        "Lọc dầu",
+        "Dầu phanh"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.7,
       "status": "open",
-      "availableSlots": ["08:00", "10:00", "13:00"],
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
       "imageUrl": "https://example.com/gara7.jpg"
     },
     {
       "id": "g8",
       "name": "Gara Hùng Vương",
       "address": "333 Trần Khát Chân, Hai Bà Trưng, Hà Nội",
-      "latitude": 21.0154,
-      "longitude": 105.8543,
+      "latitude": 21.0124,
+      "longitude": 105.8602,
       "phone": "0967890123",
-      "services": ["Cân bằng lốp", "Kiểm tra động cơ", "Thay dầu"],
+      "services": [
+        "Cân bằng lốp",
+        "Kiểm tra động cơ",
+        "Thay dầu",
+        "Lọc nhiên liệu",
+        "Dầu hộp số",
+        "Gạt mưa: cao su gạt mưa",
+        "Hệ thống điện, điều hòa"
+      ],
       "openingHours": "07:00-17:00",
       "rating": 4.1,
       "status": "closed",
-      "availableSlots": ["09:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara8.jpg"
     },
     {
       "id": "g9",
       "name": "Gara Đại Phát",
       "address": "444 Lạc Long Quân, Tây Hồ, Hà Nội",
-      "latitude": 21.0654,
-      "longitude": 105.8167,
+      "latitude": 21.0709,
+      "longitude": 105.8121,
       "phone": "0978901234",
-      "services": ["Thay phanh", "Sửa điều hòa", "Thay lốp"],
+      "services": [
+        "Thay phanh",
+        "Sửa điều hòa",
+        "Thay lốp",
+        "Dầu máy",
+        "Bugi",
+        "Hệ thống treo/gầm",
+        "Dầu phanh"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.6,
       "status": "open",
-      "availableSlots": ["08:30", "10:30", "15:30"],
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "15:30"
+      ],
       "imageUrl": "https://example.com/gara9.jpg"
     },
     {
       "id": "g10",
       "name": "Gara Nam Định",
       "address": "555 Nguyễn Văn Cừ, Long Biên, Hà Nội",
-      "latitude": 21.0432,
-      "longitude": 105.8798,
+      "latitude": 21.0453,
+      "longitude": 105.8781,
       "phone": "0989012345",
-      "services": ["Thay dầu", "Kiểm tra ắc quy", "Sửa động cơ"],
+      "services": [
+        "Thay dầu",
+        "Kiểm tra ắc quy",
+        "Sửa động cơ",
+        "Lọc gió động cơ",
+        "Dầu hộp số",
+        "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"
+      ],
       "openingHours": "07:30-17:30",
       "rating": 4.3,
       "status": "open",
-      "availableSlots": ["09:00", "11:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara10.jpg"
     },
     {
       "id": "g11",
       "name": "Gara Hoàng Anh",
       "address": "666 Đê La Thành, Ba Đình, Hà Nội",
-      "latitude": 21.0267,
-      "longitude": 105.8210,
+      "latitude": 21.026,
+      "longitude": 105.8182,
       "phone": "0990123456",
-      "services": ["Thay lốp", "Cân bằng lốp", "Thay dầu"],
+      "services": [
+        "Thay lốp",
+        "Cân bằng lốp",
+        "Thay dầu",
+        "Gạt mưa: cao su gạt mưa",
+        "Lọc dầu",
+        "Hệ thống phanh",
+        "Lọc gió điều hòa"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.5,
       "status": "open",
-      "availableSlots": ["08:00", "10:00", "13:00"],
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
       "imageUrl": "https://example.com/gara11.jpg"
     },
     {
       "id": "g12",
       "name": "Gara Bình Minh",
       "address": "777 Hoàng Quốc Việt, Cầu Giấy, Hà Nội",
-      "latitude": 21.0465,
-      "longitude": 105.7912,
+      "latitude": 21.0463,
+      "longitude": 105.7913,
       "phone": "0901234568",
-      "services": ["Sửa điều hòa", "Thay phanh", "Kiểm tra ắc quy"],
+      "services": [
+        "Sửa điều hòa",
+        "Thay phanh",
+        "Kiểm tra ắc quy",
+        "Dây đai dẫn động",
+        "Dầu phanh",
+        "Hệ thống nội thất",
+        "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"
+      ],
       "openingHours": "07:00-17:00",
       "rating": 4.2,
       "status": "closed",
-      "availableSlots": ["09:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara12.jpg"
     },
     {
       "id": "g13",
       "name": "Gara Thanh Xuân",
       "address": "888 Vũ Tông Phan, Thanh Xuân, Hà Nội",
-      "latitude": 20.9954,
-      "longitude": 105.8112,
+      "latitude": 20.9938,
+      "longitude": 105.8115,
       "phone": "0902345679",
-      "services": ["Thay dầu", "Sửa động cơ", "Thay lốp"],
+      "services": [
+        "Thay dầu",
+        "Sửa động cơ",
+        "Thay lốp",
+        "Lọc gió động cơ",
+        "Bugi",
+        "Lọc dầu",
+        "Cần gạt mưa"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.7,
       "status": "open",
-      "availableSlots": ["08:30", "10:30", "15:30"],
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "15:30"
+      ],
       "imageUrl": "https://example.com/gara13.jpg"
     },
     {
       "id": "g14",
       "name": "Gara Đông Anh",
       "address": "999 Quốc lộ 3, Đông Anh, Hà Nội",
-      "latitude": 21.1345,
-      "longitude": 105.8276,
+      "latitude": 21.1394,
+      "longitude": 105.8264,
       "phone": "0903456780",
-      "services": ["Kiểm tra ắc quy", "Cân bằng lốp", "Sửa điều hòa"],
+      "services": [
+        "Kiểm tra ắc quy",
+        "Cân bằng lốp",
+        "Sửa điều hòa",
+        "Hệ thống điện, điều hòa",
+        "Dầu hộp số",
+        "Dây đai dẫn động"
+      ],
       "openingHours": "07:30-17:30",
       "rating": 4.4,
       "status": "open",
-      "availableSlots": ["09:00", "11:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara14.jpg"
     },
     {
@@ -201,83 +367,153 @@
       "name": "Gara Hà Đông",
       "address": "1010 Quang Trung, Hà Đông, Hà Nội",
       "latitude": 20.9712,
-      "longitude": 105.7765,
+      "longitude": 105.775,
       "phone": "0904567891",
-      "services": ["Thay phanh", "Thay dầu", "Sửa động cơ"],
+      "services": [
+        "Thay phanh",
+        "Thay dầu",
+        "Sửa động cơ",
+        "Lọc nhiên liệu",
+        "Lọc gió điều hòa",
+        "Nước làm mát",
+        "Gạt mưa: cao su gạt mưa"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.6,
       "status": "open",
-      "availableSlots": ["08:00", "10:00", "13:00"],
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
       "imageUrl": "https://example.com/gara15.jpg"
     },
     {
       "id": "g16",
       "name": "Gara Long Biên",
       "address": "1111 Ngọc Lâm, Long Biên, Hà Nội",
-      "latitude": 21.0487,
-      "longitude": 105.8765,
+      "latitude": 21.0498,
+      "longitude": 105.8776,
       "phone": "0905678902",
-      "services": ["Thay lốp", "Kiểm tra ắc quy", "Sửa điều hòa"],
+      "services": [
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Sửa điều hòa",
+        "Hệ thống làm mát",
+        "Dầu máy",
+        "Lọc dầu",
+        "Sơn sửa phục hồi"
+      ],
       "openingHours": "07:00-17:00",
       "rating": 4.3,
       "status": "closed",
-      "availableSlots": ["09:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara16.jpg"
     },
     {
       "id": "g17",
       "name": "Gara Nam Từ Liêm",
       "address": "1212 Mễ Trì, Nam Từ Liêm, Hà Nội",
-      "latitude": 21.0087,
-      "longitude": 105.7612,
+      "latitude": 21.0072,
+      "longitude": 105.7644,
       "phone": "0906789013",
-      "services": ["Thay dầu", "Cân bằng lốp", "Thay phanh"],
+      "services": [
+        "Thay dầu",
+        "Cân bằng lốp",
+        "Thay phanh",
+        "Bugi",
+        "Lọc gió động cơ",
+        "Hệ thống treo/gầm",
+        "Dầu phanh"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.5,
       "status": "open",
-      "availableSlots": ["08:30", "10:30", "15:30"],
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "15:30"
+      ],
       "imageUrl": "https://example.com/gara17.jpg"
     },
     {
       "id": "g18",
       "name": "Gara Hai Bà Trưng",
       "address": "1313 Lò Đúc, Hai Bà Trưng, Hà Nội",
-      "latitude": 21.0213,
-      "longitude": 105.8567,
+      "latitude": 21.0173,
+      "longitude": 105.8605,
       "phone": "0907890124",
-      "services": ["Sửa động cơ", "Thay lốp", "Kiểm tra ắc quy"],
+      "services": [
+        "Sửa động cơ",
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Lọc dầu",
+        "Dây đai dẫn động",
+        "Dầu hộp số",
+        "Hệ thống điện, điều hòa"
+      ],
       "openingHours": "07:30-17:30",
       "rating": 4.4,
       "status": "open",
-      "availableSlots": ["09:00", "11:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara18.jpg"
     },
     {
       "id": "g19",
       "name": "Gara Ba Đình",
       "address": "1414 Kim Mã, Ba Đình, Hà Nội",
-      "latitude": 21.0345,
-      "longitude": 105.8234,
+      "latitude": 21.0341,
+      "longitude": 105.8147,
       "phone": "0908901235",
-      "services": ["Thay dầu", "Sửa điều hòa", "Thay phanh"],
+      "services": [
+        "Thay dầu",
+        "Sửa điều hòa",
+        "Thay phanh",
+        "Hệ thống phanh",
+        "Gạt mưa: cao su gạt mưa",
+        "Lọc gió điều hòa",
+        "Hệ thống nội thất"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.6,
       "status": "open",
-      "availableSlots": ["08:00", "10:00", "13:00"],
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
       "imageUrl": "https://example.com/gara19.jpg"
     },
     {
       "id": "g20",
       "name": "Gara Cầu Giấy",
       "address": "1515 Xuân Thủy, Cầu Giấy, Hà Nội",
-      "latitude": 21.0387,
-      "longitude": 105.7812,
+      "latitude": 21.0384,
+      "longitude": 105.7846,
       "phone": "0909012346",
-      "services": ["Kiểm tra ắc quy", "Cân bằng lốp", "Sửa động cơ"],
+      "services": [
+        "Kiểm tra ắc quy",
+        "Cân bằng lốp",
+        "Sửa động cơ",
+        "Lọc nhiên liệu",
+        "Thay phanh",
+        "Lọc dầu",
+        "Dầu phanh"
+      ],
       "openingHours": "07:00-17:00",
       "rating": 4.3,
       "status": "closed",
-      "availableSlots": ["09:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara20.jpg"
     }
   ],
@@ -1103,6 +1339,26 @@
       "serviceType": "Kiểm tra ắc quy",
       "status": "completed",
       "note": ""
+    },
+    {
+      "id": "b1752275150156",
+      "userId": "u1752275150156",
+      "garageId": "g5",
+      "date": "2025-07-13T00:00:00.000Z",
+      "time": "10:00",
+      "serviceType": "Thay dầu, Cân bằng lốp",
+      "status": "pending",
+      "note": "aaaaaaa"
+    },
+    {
+      "id": "b1752275150157",
+      "userId": "u25",
+      "garageId": "g17",
+      "date": "2025-07-13T00:00:00.000Z",
+      "time": "08:30",
+      "serviceType": "Lọc gió động cơ, Dầu phanh",
+      "status": "pending",
+      "note": ""
     }
   ],
   "Feedback": [
@@ -1204,6 +1460,16 @@
           "sender": "garage",
           "message": "Được, anh/chị đặt lịch nhé!",
           "timestamp": "2025-07-03T08:05:00Z"
+        },
+        {
+          "sender": "user",
+          "message": "ok em",
+          "timestamp": "2025-07-11T19:22:07.758Z"
+        },
+        {
+          "sender": "user",
+          "message": "anh cần thay lốp xe",
+          "timestamp": "2025-07-11T19:24:59.761Z"
         }
       ]
     },
@@ -1223,6 +1489,11 @@
           "sender": "garage",
           "message": "Được, mời anh/chị đến 9h sáng mai.",
           "timestamp": "2025-07-04T09:05:00Z"
+        },
+        {
+          "sender": "user",
+          "message": "ok em",
+          "timestamp": "2025-07-11T19:31:05.409Z"
         }
       ]
     },
@@ -1412,7 +1683,10 @@
       {
         "bookingId": "b1",
         "serviceType": "Thay dầu",
-        "partsUsed": ["Dầu tổng hợp", "Lọc dầu"],
+        "partsUsed": [
+          "Dầu tổng hợp",
+          "Lọc dầu"
+        ],
         "duration": "30 phút"
       }
     ],
@@ -1438,14 +1712,20 @@
       {
         "id": "s1",
         "name": "Trần Văn Bình",
-        "skills": ["Thay dầu", "Thay lốp"],
+        "skills": [
+          "Thay dầu",
+          "Thay lốp"
+        ],
         "assignedTask": "Thay dầu",
         "bookingId": "b1"
       },
       {
         "id": "s2",
         "name": "Lê Thị Mai",
-        "skills": ["Sửa điều hòa", "Thay phanh"],
+        "skills": [
+          "Sửa điều hòa",
+          "Thay phanh"
+        ],
         "assignedTask": "Sửa điều hòa",
         "bookingId": "b2"
       }
