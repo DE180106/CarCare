@@ -263,8 +263,23 @@ const HomePage = () => {
         <Container>
           <div className="d-flex justify-content-between align-items-center mb-4">
             <h2 className="fw-bold mb-0">Garage uy tín</h2>
-            <Link to="/garages" className="btn btn-link">Xem tất cả</Link>
+            <div className="d-flex gap-2">
+              <Link to="/garages" className="btn btn-link">Xem tất cả</Link>
+              <Button
+                variant="success"
+                onClick={() => {
+                  if (!loggedInUser) {
+                    alert("Bạn cần đăng nhập để gửi đánh giá.");
+                  } else {
+                    window.location.href = "/feedback";
+                  }
+                }}
+              >
+                Gửi đánh giá Garage
+              </Button>
+            </div>
           </div>
+
 
           <Row>
             {featuredGarages.map((garage) => (

@@ -7,11 +7,25 @@
       "latitude": 21.0183,
       "longitude": 105.8176,
       "phone": "0901234567",
-      "services": ["Thay dầu", "Thay lốp", "Kiểm tra ắc quy", "Dầu máy", "Lọc dầu", "Hệ thống phanh", "Lọc gió động cơ", "Gạt mưa: cao su gạt mưa"],
+      "services": [
+        "Thay dầu",
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Dầu máy",
+        "Lọc dầu",
+        "Hệ thống phanh",
+        "Lọc gió động cơ",
+        "Gạt mưa: cao su gạt mưa"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.6,
       "status": "open",
-      "availableSlots": ["08:00", "09:00", "10:00", "14:00"],
+      "availableSlots": [
+        "08:00",
+        "09:00",
+        "10:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara1.jpg"
     },
     {
@@ -21,11 +35,23 @@
       "latitude": 20.9984,
       "longitude": 105.8024,
       "phone": "0909876543",
-      "services": ["Sửa động cơ", "Cân bằng lốp", "Sửa điều hòa", "Dầu hộp số", "Dây đai dẫn động", "Hệ thống lái", "Lọc gió điều hòa"],
+      "services": [
+        "Sửa động cơ",
+        "Cân bằng lốp",
+        "Sửa điều hòa",
+        "Dầu hộp số",
+        "Dây đai dẫn động",
+        "Hệ thống lái",
+        "Lọc gió điều hòa"
+      ],
       "openingHours": "07:30-17:30",
       "rating": 4.3,
       "status": "open",
-      "availableSlots": ["09:00", "11:00", "15:00"],
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "15:00"
+      ],
       "imageUrl": "https://example.com/gara2.jpg"
     },
     {
@@ -35,11 +61,24 @@
       "latitude": 20.9916,
       "longitude": 105.8439,
       "phone": "0912345678",
-      "services": ["Thay phanh", "Kiểm tra ắc quy", "Thay dầu", "Lọc dầu", "Dầu phanh", "Gạt mưa: cao su gạt mưa", "Hệ thống làm mát", "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"],
+      "services": [
+        "Thay phanh",
+        "Kiểm tra ắc quy",
+        "Thay dầu",
+        "Lọc dầu",
+        "Dầu phanh",
+        "Gạt mưa: cao su gạt mưa",
+        "Hệ thống làm mát",
+        "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.8,
       "status": "open",
-      "availableSlots": ["08:30", "10:30", "13:00"],
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "13:00"
+      ],
       "imageUrl": "https://example.com/gara3.jpg"
     },
     {
@@ -49,11 +88,22 @@
       "latitude": 21.0332,
       "longitude": 105.7989,
       "phone": "0923456789",
-      "services": ["Thay lốp", "Sửa điều hòa", "Kiểm tra động cơ", "Hệ thống điện, điều hòa", "Dầu máy", "Sơn sửa phục hồi", "Cần gạt mưa"],
+      "services": [
+        "Thay lốp",
+        "Sửa điều hòa",
+        "Kiểm tra động cơ",
+        "Hệ thống điện, điều hòa",
+        "Dầu máy",
+        "Sơn sửa phục hồi",
+        "Cần gạt mưa"
+      ],
       "openingHours": "07:00-17:00",
       "rating": 4.2,
       "status": "closed",
-      "availableSlots": ["09:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara4.jpg"
     },
     {
@@ -61,13 +111,25 @@
       "name": "Gara Việt Hưng",
       "address": "654 Kim Mã, Ba Đình, Hà Nội",
       "latitude": 21.0343,
-      "longitude": 105.8170,
+      "longitude": 105.817,
       "phone": "0934567890",
-      "services": ["Thay dầu", "Sửa phanh", "Cân bằng lốp", "Lọc dầu", "Lọc nhiên liệu", "Hệ thống phanh", "Lọc gió điều hòa"],
+      "services": [
+        "Thay dầu",
+        "Sửa phanh",
+        "Cân bằng lốp",
+        "Lọc dầu",
+        "Lọc nhiên liệu",
+        "Hệ thống phanh",
+        "Lọc gió điều hòa"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.5,
       "status": "open",
-      "availableSlots": ["08:00", "10:00", "15:00"],
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "15:00"
+      ],
       "imageUrl": "https://example.com/gara5.jpg"
     },
     {
@@ -77,11 +139,23 @@
       "latitude": 21.0067,
       "longitude": 105.8232,
       "phone": "0945678901",
-      "services": ["Sửa động cơ", "Thay lốp", "Kiểm tra ắc quy", "Hệ thống treo/gầm", "Dầu máy", "Lọc gió điều hòa", "Bugi"],
+      "services": [
+        "Sửa động cơ",
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Hệ thống treo/gầm",
+        "Dầu máy",
+        "Lọc gió điều hòa",
+        "Bugi"
+      ],
       "openingHours": "07:30-17:30",
       "rating": 4.4,
       "status": "open",
-      "availableSlots": ["09:30", "11:30", "14:30"],
+      "availableSlots": [
+        "09:30",
+        "11:30",
+        "14:30"
+      ],
       "imageUrl": "https://example.com/gara6.jpg"
     },
     {
@@ -91,11 +165,23 @@
       "latitude": 21.0594,
       "longitude": 105.7839,
       "phone": "0956789012",
-      "services": ["Thay dầu", "Sửa điều hòa", "Thay phanh", "Gạt mưa: cao su gạt mưa", "Hệ thống làm mát", "Lọc dầu", "Dầu phanh"],
+      "services": [
+        "Thay dầu",
+        "Sửa điều hòa",
+        "Thay phanh",
+        "Gạt mưa: cao su gạt mưa",
+        "Hệ thống làm mát",
+        "Lọc dầu",
+        "Dầu phanh"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.7,
       "status": "open",
-      "availableSlots": ["08:00", "10:00", "13:00"],
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
       "imageUrl": "https://example.com/gara7.jpg"
     },
     {
@@ -105,11 +191,22 @@
       "latitude": 21.0124,
       "longitude": 105.8602,
       "phone": "0967890123",
-      "services": ["Cân bằng lốp", "Kiểm tra động cơ", "Thay dầu", "Lọc nhiên liệu", "Dầu hộp số", "Gạt mưa: cao su gạt mưa", "Hệ thống điện, điều hòa"],
+      "services": [
+        "Cân bằng lốp",
+        "Kiểm tra động cơ",
+        "Thay dầu",
+        "Lọc nhiên liệu",
+        "Dầu hộp số",
+        "Gạt mưa: cao su gạt mưa",
+        "Hệ thống điện, điều hòa"
+      ],
       "openingHours": "07:00-17:00",
       "rating": 4.1,
       "status": "closed",
-      "availableSlots": ["09:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara8.jpg"
     },
     {
@@ -119,11 +216,23 @@
       "latitude": 21.0709,
       "longitude": 105.8121,
       "phone": "0978901234",
-      "services": ["Thay phanh", "Sửa điều hòa", "Thay lốp", "Dầu máy", "Bugi", "Hệ thống treo/gầm", "Dầu phanh"],
+      "services": [
+        "Thay phanh",
+        "Sửa điều hòa",
+        "Thay lốp",
+        "Dầu máy",
+        "Bugi",
+        "Hệ thống treo/gầm",
+        "Dầu phanh"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.6,
       "status": "open",
-      "availableSlots": ["08:30", "10:30", "15:30"],
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "15:30"
+      ],
       "imageUrl": "https://example.com/gara9.jpg"
     },
     {
@@ -133,29 +242,48 @@
       "latitude": 21.0453,
       "longitude": 105.8781,
       "phone": "0989012345",
-      "services": ["Thay dầu", "Kiểm tra ắc quy", "Sửa động cơ", "Lọc gió động cơ", "Dầu hộp số", "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"],
+      "services": [
+        "Thay dầu",
+        "Kiểm tra ắc quy",
+        "Sửa động cơ",
+        "Lọc gió động cơ",
+        "Dầu hộp số",
+        "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"
+      ],
       "openingHours": "07:30-17:30",
       "rating": 4.3,
       "status": "open",
-      "availableSlots": ["09:00", "11:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara10.jpg"
     },
-  
-
-
-       
     {
       "id": "g11",
       "name": "Gara Hoàng Anh",
       "address": "666 Đê La Thành, Ba Đình, Hà Nội",
-      "latitude": 21.0260,
+      "latitude": 21.026,
       "longitude": 105.8182,
       "phone": "0990123456",
-      "services": ["Thay lốp", "Cân bằng lốp", "Thay dầu", "Gạt mưa: cao su gạt mưa", "Lọc dầu", "Hệ thống phanh", "Lọc gió điều hòa"],
+      "services": [
+        "Thay lốp",
+        "Cân bằng lốp",
+        "Thay dầu",
+        "Gạt mưa: cao su gạt mưa",
+        "Lọc dầu",
+        "Hệ thống phanh",
+        "Lọc gió điều hòa"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.5,
       "status": "open",
-      "availableSlots": ["08:00", "10:00", "13:00"],
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
       "imageUrl": "https://example.com/gara11.jpg"
     },
     {
@@ -165,11 +293,22 @@
       "latitude": 21.0463,
       "longitude": 105.7913,
       "phone": "0901234568",
-      "services": ["Sửa điều hòa", "Thay phanh", "Kiểm tra ắc quy", "Dây đai dẫn động", "Dầu phanh", "Hệ thống nội thất", "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"],
+      "services": [
+        "Sửa điều hòa",
+        "Thay phanh",
+        "Kiểm tra ắc quy",
+        "Dây đai dẫn động",
+        "Dầu phanh",
+        "Hệ thống nội thất",
+        "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"
+      ],
       "openingHours": "07:00-17:00",
       "rating": 4.2,
       "status": "closed",
-      "availableSlots": ["09:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara12.jpg"
     },
     {
@@ -179,11 +318,23 @@
       "latitude": 20.9938,
       "longitude": 105.8115,
       "phone": "0902345679",
-      "services": ["Thay dầu", "Sửa động cơ", "Thay lốp", "Lọc gió động cơ", "Bugi", "Lọc dầu", "Cần gạt mưa"],
+      "services": [
+        "Thay dầu",
+        "Sửa động cơ",
+        "Thay lốp",
+        "Lọc gió động cơ",
+        "Bugi",
+        "Lọc dầu",
+        "Cần gạt mưa"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.7,
       "status": "open",
-      "availableSlots": ["08:30", "10:30", "15:30"],
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "15:30"
+      ],
       "imageUrl": "https://example.com/gara13.jpg"
     },
     {
@@ -193,11 +344,22 @@
       "latitude": 21.1394,
       "longitude": 105.8264,
       "phone": "0903456780",
-      "services": ["Kiểm tra ắc quy", "Cân bằng lốp", "Sửa điều hòa", "Hệ thống điện, điều hòa", "Dầu hộp số", "Dây đai dẫn động"],
+      "services": [
+        "Kiểm tra ắc quy",
+        "Cân bằng lốp",
+        "Sửa điều hòa",
+        "Hệ thống điện, điều hòa",
+        "Dầu hộp số",
+        "Dây đai dẫn động"
+      ],
       "openingHours": "07:30-17:30",
       "rating": 4.4,
       "status": "open",
-      "availableSlots": ["09:00", "11:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara14.jpg"
     },
     {
@@ -205,13 +367,25 @@
       "name": "Gara Hà Đông",
       "address": "1010 Quang Trung, Hà Đông, Hà Nội",
       "latitude": 20.9712,
-      "longitude": 105.7750,
+      "longitude": 105.775,
       "phone": "0904567891",
-      "services": ["Thay phanh", "Thay dầu", "Sửa động cơ", "Lọc nhiên liệu", "Lọc gió điều hòa", "Nước làm mát", "Gạt mưa: cao su gạt mưa"],
+      "services": [
+        "Thay phanh",
+        "Thay dầu",
+        "Sửa động cơ",
+        "Lọc nhiên liệu",
+        "Lọc gió điều hòa",
+        "Nước làm mát",
+        "Gạt mưa: cao su gạt mưa"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.6,
       "status": "open",
-      "availableSlots": ["08:00", "10:00", "13:00"],
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
       "imageUrl": "https://example.com/gara15.jpg"
     },
     {
@@ -221,11 +395,22 @@
       "latitude": 21.0498,
       "longitude": 105.8776,
       "phone": "0905678902",
-      "services": ["Thay lốp", "Kiểm tra ắc quy", "Sửa điều hòa", "Hệ thống làm mát", "Dầu máy", "Lọc dầu", "Sơn sửa phục hồi"],
+      "services": [
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Sửa điều hòa",
+        "Hệ thống làm mát",
+        "Dầu máy",
+        "Lọc dầu",
+        "Sơn sửa phục hồi"
+      ],
       "openingHours": "07:00-17:00",
       "rating": 4.3,
       "status": "closed",
-      "availableSlots": ["09:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara16.jpg"
     },
     {
@@ -235,11 +420,23 @@
       "latitude": 21.0072,
       "longitude": 105.7644,
       "phone": "0906789013",
-      "services": ["Thay dầu", "Cân bằng lốp", "Thay phanh", "Bugi", "Lọc gió động cơ", "Hệ thống treo/gầm", "Dầu phanh"],
+      "services": [
+        "Thay dầu",
+        "Cân bằng lốp",
+        "Thay phanh",
+        "Bugi",
+        "Lọc gió động cơ",
+        "Hệ thống treo/gầm",
+        "Dầu phanh"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.5,
       "status": "open",
-      "availableSlots": ["08:30", "10:30", "15:30"],
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "15:30"
+      ],
       "imageUrl": "https://example.com/gara17.jpg"
     },
     {
@@ -249,11 +446,23 @@
       "latitude": 21.0173,
       "longitude": 105.8605,
       "phone": "0907890124",
-      "services": ["Sửa động cơ", "Thay lốp", "Kiểm tra ắc quy", "Lọc dầu", "Dây đai dẫn động", "Dầu hộp số", "Hệ thống điện, điều hòa"],
+      "services": [
+        "Sửa động cơ",
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Lọc dầu",
+        "Dây đai dẫn động",
+        "Dầu hộp số",
+        "Hệ thống điện, điều hòa"
+      ],
       "openingHours": "07:30-17:30",
       "rating": 4.4,
       "status": "open",
-      "availableSlots": ["09:00", "11:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara18.jpg"
     },
     {
@@ -263,11 +472,23 @@
       "latitude": 21.0341,
       "longitude": 105.8147,
       "phone": "0908901235",
-      "services": ["Thay dầu", "Sửa điều hòa", "Thay phanh", "Hệ thống phanh", "Gạt mưa: cao su gạt mưa", "Lọc gió điều hòa", "Hệ thống nội thất"],
+      "services": [
+        "Thay dầu",
+        "Sửa điều hòa",
+        "Thay phanh",
+        "Hệ thống phanh",
+        "Gạt mưa: cao su gạt mưa",
+        "Lọc gió điều hòa",
+        "Hệ thống nội thất"
+      ],
       "openingHours": "08:00-18:00",
       "rating": 4.6,
       "status": "open",
-      "availableSlots": ["08:00", "10:00", "13:00"],
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
       "imageUrl": "https://example.com/gara19.jpg"
     },
     {
@@ -277,14 +498,24 @@
       "latitude": 21.0384,
       "longitude": 105.7846,
       "phone": "0909012346",
-      "services": ["Kiểm tra ắc quy", "Cân bằng lốp", "Sửa động cơ", "Lọc nhiên liệu", "Thay phanh", "Lọc dầu", "Dầu phanh"],
+      "services": [
+        "Kiểm tra ắc quy",
+        "Cân bằng lốp",
+        "Sửa động cơ",
+        "Lọc nhiên liệu",
+        "Thay phanh",
+        "Lọc dầu",
+        "Dầu phanh"
+      ],
       "openingHours": "07:00-17:00",
       "rating": 4.3,
       "status": "closed",
-      "availableSlots": ["09:00", "14:00"],
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
       "imageUrl": "https://example.com/gara20.jpg"
     }
-
   ],
   "Users": [
     {
@@ -705,6 +936,20 @@
         "make": "Mazda",
         "model": "2",
         "licensePlate": "30A-789.01"
+      }
+    },
+    {
+      "id": "u1752350713095",
+      "fullName": "Pham Ngoc",
+      "email": "phamngoc0045@gmail.com",
+      "phone": "123456789",
+      "address": "87 East 2580 South",
+      "password": "11112222",
+      "avatarUrl": "a",
+      "car": {
+        "make": "a",
+        "model": "a",
+        "licensePlate": "a"
       }
     }
   ],
@@ -1190,6 +1435,13 @@
       "rating": 5,
       "comment": "Thay dầu nhanh, giá tốt.",
       "timestamp": "2025-07-13T10:00:00Z"
+    },
+    {
+      "id": 1752351860986,
+      "userId": "u1752350713095",
+      "garageId": "g1",
+      "rating": 2,
+      "comment": "2edwsa"
     }
   ],
   "ChatThreads": [
@@ -1417,7 +1669,10 @@
       {
         "bookingId": "b1",
         "serviceType": "Thay dầu",
-        "partsUsed": ["Dầu tổng hợp", "Lọc dầu"],
+        "partsUsed": [
+          "Dầu tổng hợp",
+          "Lọc dầu"
+        ],
         "duration": "30 phút"
       }
     ],
@@ -1443,14 +1698,20 @@
       {
         "id": "s1",
         "name": "Trần Văn Bình",
-        "skills": ["Thay dầu", "Thay lốp"],
+        "skills": [
+          "Thay dầu",
+          "Thay lốp"
+        ],
         "assignedTask": "Thay dầu",
         "bookingId": "b1"
       },
       {
         "id": "s2",
         "name": "Lê Thị Mai",
-        "skills": ["Sửa điều hòa", "Thay phanh"],
+        "skills": [
+          "Sửa điều hòa",
+          "Thay phanh"
+        ],
         "assignedTask": "Sửa điều hòa",
         "bookingId": "b2"
       }

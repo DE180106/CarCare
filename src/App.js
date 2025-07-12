@@ -8,6 +8,9 @@ import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
 import UserDashboard from './UserDashboard'; // Bạn đã tạo file này rồi
 import ForgotPassword from './ForgotPassword';
+import GarageListPage from './GarageListPage';
+import FeedbackPage from './Feedback';
+
 function App() {
   return (
     <Routes>
@@ -16,6 +19,10 @@ function App() {
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/user/dashboard" element={<UserDashboard />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route path="/garages" element={<GarageListPage />} />
+      <Route path="/feedback" element={<FeedbackPage />} />
+      
+
     </Routes>
   );
 }
