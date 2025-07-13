@@ -100,6 +100,15 @@ const HomePage = () => {
       ></i>
     ));
   };
+  const getGarageFeedback = (garageId) => {
+    return data.Feedback.filter(feedback => feedback.garageId === garageId).map(feedback => ({
+      id: feedback.id,
+      name: data.Users.find(user => user.id === feedback.userId)?.fullName || `Khách hàng ${feedback.userId}`,
+      comment: feedback.comment,
+      rating: feedback.rating
+    }));
+  };
+
 
   return (
     <div>
@@ -316,8 +325,9 @@ const HomePage = () => {
                   </Card.Body>
                   <Card.Footer className="bg-transparent border-0 pt-0">
                     <div className="d-flex justify-content-between">
-                      <Button variant="outline-primary" size="sm" as={Link} to={`/garage/${garage.id}`}>Chi tiết</Button>
-                      <Button variant="primary" size="sm" as={Link} to={`/booking/${garage.id}`}>Đặt lịch</Button>
+                      <Button variant="outline-secondary" size="sm" as={Link} to={`/garage/${garage.id}/reviews`}>
+                        Xem đánh giá
+                      </Button>
                     </div>
                   </Card.Footer>
                 </Card>
