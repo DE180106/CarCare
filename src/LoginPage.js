@@ -12,7 +12,7 @@ const LoginPage = () => {
   const handleLogin = (e) => {
   e.preventDefault();
 
-  // Kiểm tra tài khoản admin
+  // Check Admin
   const adminCredentials = data.AdminDashboard?.AdminCredentials;
   if (
     email === adminCredentials?.email &&
@@ -28,7 +28,7 @@ const LoginPage = () => {
     return;
   }
 
-  // Kiểm tra người dùng thường
+  // Check User or Garage (đều nằm trong Users)
   const matchedUser = data.Users.find(
     (user) => user.email === email && user.password === password
   );
@@ -36,12 +36,14 @@ const LoginPage = () => {
   if (!matchedUser) {
     setErrorMsg("Email hoặc mật khẩu không chính xác.");
   } else {
-    localStorage.setItem("loggedInUser", JSON.stringify({ ...matchedUser, role: "user" }));
-    const redirectTo = localStorage.getItem("redirectAfterLogin") || "/user/dashboard";
-    localStorage.removeItem("redirectAfterLogin");
-    navigate(redirectTo);
+    const role = matchedUser.role === "garage" ? "garage" : "user";
+    localStorage.setItem("loggedInUser", JSON.stringify({ ...matchedUser, role }));
+    const redirectPath =
+      role === "garage" ? "/garage/dashboard" : "/user/dashboard";
+    navigate(redirectPath);
   }
 };
+
 
 
   return (

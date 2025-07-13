@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import 'bootstrap-icons/font/bootstrap-icons.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import HomePage from './HomePage';
 import LoginPage from './LoginPage';
@@ -12,6 +12,7 @@ import GarageListPage from './GarageListPage';
 import FeedbackPage from './Feedback';
 import BookingForm from './booking';
 import AdminDashboard from './AdminDashboard';
+import GarageDashboard from './GarageDashboard';
 
 
 function App() {
@@ -26,8 +27,7 @@ function App() {
       <Route path="/feedback" element={<FeedbackPage />} />
       <Route path="/booking" element={<BookingForm />} />
       <Route path="/admin/dashboard" element={<AdminDashboard />} />
-
-
+      <Route path="/garage/dashboard" element={<GarageDashboard />} />
     </Routes>
   );
 }
