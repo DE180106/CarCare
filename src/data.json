@@ -953,205 +953,205 @@
       }
     },
     {
-    "id": "g1",
-    "fullName": "Garage An Phát",
-    "email": "garage01@carcare.vn",
-    "password": "123456",
-    "phone": "0901000001",
-    "address": "Số 1, Đường Láng, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G1",
-    "role": "garage"
-  },
-  {
-    "id": "g2",
-    "fullName": "Garage Bảo Tín",
-    "email": "garage02@carcare.vn",
-    "password": "123456",
-    "phone": "0901000002",
-    "address": "Số 2, Cầu Giấy, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G2",
-    "role": "garage"
-  },
-  {
-    "id": "g3",
-    "fullName": "Garage Cường Thịnh",
-    "email": "garage03@carcare.vn",
-    "password": "123456",
-    "phone": "0901000003",
-    "address": "Số 3, Kim Mã, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G3",
-    "role": "garage"
-  },
-  {
-    "id": "g4",
-    "fullName": "Garage Đại Lợi",
-    "email": "garage04@carcare.vn",
-    "password": "123456",
-    "phone": "0901000004",
-    "address": "Số 4, Trần Duy Hưng, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G4",
-    "role": "garage"
-  },
-  {
-    "id": "g5",
-    "fullName": "Garage EcoTech",
-    "email": "garage05@carcare.vn",
-    "password": "123456",
-    "phone": "0901000005",
-    "address": "Số 5, Nguyễn Trãi, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G5",
-    "role": "garage"
-  },
-  {
-    "id": "g6",
-    "fullName": "Garage Phát Tài",
-    "email": "garage06@carcare.vn",
-    "password": "123456",
-    "phone": "0901000006",
-    "address": "Số 6, Phạm Văn Đồng, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G6",
-    "role": "garage"
-  },
-  {
-    "id": "g7",
-    "fullName": "Garage Thành Công",
-    "email": "garage07@carcare.vn",
-    "password": "123456",
-    "phone": "0901000007",
-    "address": "Số 7, Xuân Thủy, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G7",
-    "role": "garage"
-  },
-  {
-    "id": "g8",
-    "fullName": "Garage Hoàng Gia",
-    "email": "garage08@carcare.vn",
-    "password": "123456",
-    "phone": "0901000008",
-    "address": "Số 8, Nguyễn Văn Cừ, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G8",
-    "role": "garage"
-  },
-  {
-    "id": "g9",
-    "fullName": "Garage Kim Long",
-    "email": "garage09@carcare.vn",
-    "password": "123456",
-    "phone": "0901000009",
-    "address": "Số 9, Lạc Long Quân, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G9",
-    "role": "garage"
-  },
-  {
-    "id": "g10",
-    "fullName": "Garage Tâm Đức",
-    "email": "garage10@carcare.vn",
-    "password": "123456",
-    "phone": "0901000010",
-    "address": "Số 10, Hồ Tùng Mậu, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G10",
-    "role": "garage"
-  },
-  {
-    "id": "g11",
-    "fullName": "Garage Việt Auto",
-    "email": "garage11@carcare.vn",
-    "password": "123456",
-    "phone": "0901000011",
-"address": "Số 11, Giải Phóng, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G11",
-    "role": "garage"
-  },
-  {
-    "id": "g12",
-    "fullName": "Garage Phúc Hưng",
-    "email": "garage12@carcare.vn",
-    "password": "123456",
-    "phone": "0901000012",
-    "address": "Số 12, Hoàng Hoa Thám, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G12",
-    "role": "garage"
-  },
-  {
-    "id": "g13",
-    "fullName": "Garage Trường Thành",
-    "email": "garage13@carcare.vn",
-    "password": "123456",
-    "phone": "0901000013",
-    "address": "Số 13, Tôn Đức Thắng, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G13",
-    "role": "garage"
-  },
-  {
-    "id": "g14",
-    "fullName": "Garage Hòa Bình",
-    "email": "garage14@carcare.vn",
-    "password": "123456",
-    "phone": "0901000014",
-    "address": "Số 14, Thanh Xuân, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G14",
-    "role": "garage"
-  },
-  {
-    "id": "g15",
-    "fullName": "Garage Đông Dương",
-    "email": "garage15@carcare.vn",
-    "password": "123456",
-    "phone": "0901000015",
-    "address": "Số 15, Bạch Mai, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G15",
-    "role": "garage"
-  },
-  {
-    "id": "g16",
-    "fullName": "Garage Quang Minh",
-    "email": "garage16@carcare.vn",
-    "password": "123456",
-    "phone": "0901000016",
-    "address": "Số 16, Tây Hồ, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G16",
-    "role": "garage"
-  },
-  {
-    "id": "g17",
-    "fullName": "Garage Nhật Minh",
-    "email": "garage17@carcare.vn",
-    "password": "123456",
-    "phone": "0901000017",
-    "address": "Số 17, Lê Văn Lương, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G17",
-    "role": "garage"
-  },
-  {
-    "id": "g18",
-    "fullName": "Garage An Khang",
-    "email": "garage18@carcare.vn",
-    "password": "123456",
-    "phone": "0901000018",
-    "address": "Số 18, Trung Kính, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G18",
-    "role": "garage"
-  },
-  {
-    "id": "g19",
-    "fullName": "Garage Minh Châu",
-    "email": "garage19@carcare.vn",
-    "password": "123456",
-    "phone": "0901000019",
-    "address": "Số 19, Phố Huế, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G19",
-    "role": "garage"
-  },
-  {
-    "id": "g20",
-    "fullName": "Garage Vạn Phát",
-    "email": "garage20@carcare.vn",
-    "password": "123456",
-    "phone": "0901000020",
-    "address": "Số 20, Trương Định, Hà Nội",
-    "avatarUrl": "https://via.placeholder.com/80?text=G20",
-    "role": "garage"
-  }
+      "id": "g1",
+      "fullName": "Garage An Phát",
+      "email": "garage01@carcare.vn",
+      "password": "123456",
+      "phone": "0901000001",
+      "address": "Số 1, Đường Láng, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G1",
+      "role": "garage"
+    },
+    {
+      "id": "g2",
+      "fullName": "Garage Bảo Tín",
+      "email": "garage02@carcare.vn",
+      "password": "123456",
+      "phone": "0901000002",
+      "address": "Số 2, Cầu Giấy, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G2",
+      "role": "garage"
+    },
+    {
+      "id": "g3",
+      "fullName": "Garage Cường Thịnh",
+      "email": "garage03@carcare.vn",
+      "password": "123456",
+      "phone": "0901000003",
+      "address": "Số 3, Kim Mã, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G3",
+      "role": "garage"
+    },
+    {
+      "id": "g4",
+      "fullName": "Garage Đại Lợi",
+      "email": "garage04@carcare.vn",
+      "password": "123456",
+      "phone": "0901000004",
+      "address": "Số 4, Trần Duy Hưng, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G4",
+      "role": "garage"
+    },
+    {
+      "id": "g5",
+      "fullName": "Garage EcoTech",
+      "email": "garage05@carcare.vn",
+      "password": "123456",
+      "phone": "0901000005",
+      "address": "Số 5, Nguyễn Trãi, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G5",
+      "role": "garage"
+    },
+    {
+      "id": "g6",
+      "fullName": "Garage Phát Tài",
+      "email": "garage06@carcare.vn",
+      "password": "123456",
+      "phone": "0901000006",
+      "address": "Số 6, Phạm Văn Đồng, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G6",
+      "role": "garage"
+    },
+    {
+      "id": "g7",
+      "fullName": "Garage Thành Công",
+      "email": "garage07@carcare.vn",
+      "password": "123456",
+      "phone": "0901000007",
+      "address": "Số 7, Xuân Thủy, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G7",
+      "role": "garage"
+    },
+    {
+      "id": "g8",
+      "fullName": "Garage Hoàng Gia",
+      "email": "garage08@carcare.vn",
+      "password": "123456",
+      "phone": "0901000008",
+      "address": "Số 8, Nguyễn Văn Cừ, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G8",
+      "role": "garage"
+    },
+    {
+      "id": "g9",
+      "fullName": "Garage Kim Long",
+      "email": "garage09@carcare.vn",
+      "password": "123456",
+      "phone": "0901000009",
+      "address": "Số 9, Lạc Long Quân, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G9",
+      "role": "garage"
+    },
+    {
+      "id": "g10",
+      "fullName": "Garage Tâm Đức",
+      "email": "garage10@carcare.vn",
+      "password": "123456",
+      "phone": "0901000010",
+      "address": "Số 10, Hồ Tùng Mậu, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G10",
+      "role": "garage"
+    },
+    {
+      "id": "g11",
+      "fullName": "Garage Việt Auto",
+      "email": "garage11@carcare.vn",
+      "password": "123456",
+      "phone": "0901000011",
+      "address": "Số 11, Giải Phóng, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G11",
+      "role": "garage"
+    },
+    {
+      "id": "g12",
+      "fullName": "Garage Phúc Hưng",
+      "email": "garage12@carcare.vn",
+      "password": "123456",
+      "phone": "0901000012",
+      "address": "Số 12, Hoàng Hoa Thám, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G12",
+      "role": "garage"
+    },
+    {
+      "id": "g13",
+      "fullName": "Garage Trường Thành",
+      "email": "garage13@carcare.vn",
+      "password": "123456",
+      "phone": "0901000013",
+      "address": "Số 13, Tôn Đức Thắng, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G13",
+      "role": "garage"
+    },
+    {
+      "id": "g14",
+      "fullName": "Garage Hòa Bình",
+      "email": "garage14@carcare.vn",
+      "password": "123456",
+      "phone": "0901000014",
+      "address": "Số 14, Thanh Xuân, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G14",
+      "role": "garage"
+    },
+    {
+      "id": "g15",
+      "fullName": "Garage Đông Dương",
+      "email": "garage15@carcare.vn",
+      "password": "123456",
+      "phone": "0901000015",
+      "address": "Số 15, Bạch Mai, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G15",
+      "role": "garage"
+    },
+    {
+      "id": "g16",
+      "fullName": "Garage Quang Minh",
+      "email": "garage16@carcare.vn",
+      "password": "123456",
+      "phone": "0901000016",
+      "address": "Số 16, Tây Hồ, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G16",
+      "role": "garage"
+    },
+    {
+      "id": "g17",
+      "fullName": "Garage Nhật Minh",
+      "email": "garage17@carcare.vn",
+      "password": "123456",
+      "phone": "0901000017",
+      "address": "Số 17, Lê Văn Lương, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G17",
+      "role": "garage"
+    },
+    {
+      "id": "g18",
+      "fullName": "Garage An Khang",
+      "email": "garage18@carcare.vn",
+      "password": "123456",
+      "phone": "0901000018",
+      "address": "Số 18, Trung Kính, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G18",
+      "role": "garage"
+    },
+    {
+      "id": "g19",
+      "fullName": "Garage Minh Châu",
+      "email": "garage19@carcare.vn",
+      "password": "123456",
+      "phone": "0901000019",
+      "address": "Số 19, Phố Huế, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G19",
+      "role": "garage"
+    },
+    {
+      "id": "g20",
+      "fullName": "Garage Vạn Phát",
+      "email": "garage20@carcare.vn",
+      "password": "123456",
+      "phone": "0901000020",
+      "address": "Số 20, Trương Định, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G20",
+      "role": "garage"
+    }
   ],
   "Bookings": [
     {
@@ -1726,6 +1726,20 @@
           "sender": "garage",
           "message": "Khoảng 1 giờ, anh/chị ạ.",
           "timestamp": "2025-07-05T08:05:00Z"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "participants": {
+        "userId": "u11",
+        "garageId": "g3"
+      },
+      "messages": [
+        {
+          "sender": "user",
+          "message": "thg nguyen an shit",
+          "timestamp": "2025-07-13T17:31:11.296Z"
         }
       ]
     }

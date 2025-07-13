@@ -123,9 +123,9 @@ const HomePage = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link as={Link} to="/" active>Trang chủ</Nav.Link>
-              <Nav.Link as={Link} to="/services">Dịch vụ</Nav.Link>
+              
               <Nav.Link as={Link} to="/garages">Garage</Nav.Link>
-              <Nav.Link as={Link} to="/about">Giới thiệu</Nav.Link>
+              <Nav.Link as={Link} to="/map">Tìm Gara</Nav.Link>
               <Nav.Link as={Link} to="/contact">Liên hệ</Nav.Link>
               {loggedInUser ? (
                 <>
