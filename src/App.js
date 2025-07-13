@@ -6,11 +6,12 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import HomePage from './HomePage';
 import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
-import UserDashboard from './UserDashboard'; // Bạn đã tạo file này rồi
+import UserDashboard from './UserDashboard';
 import ForgotPassword from './ForgotPassword';
 import GarageListPage from './GarageListPage';
 import FeedbackPage from './Feedback';
 import BookingForm from './booking';
+import AdminDashboard from './AdminDashboard';
 
 
 function App() {
@@ -23,8 +24,8 @@ function App() {
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/garages" element={<GarageListPage />} />
       <Route path="/feedback" element={<FeedbackPage />} />
-      
-      <Route path="/booking" element={<BookingForm />} /> // ✅ sửa từ "/book" thành "/booking"
+      <Route path="/booking" element={<BookingForm />} />
+      <Route path="/admin/dashboard" element={<AdminDashboard />} />
 
 
     </Routes>

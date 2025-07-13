@@ -10,20 +10,39 @@ const LoginPage = () => {
   const [errorMsg, setErrorMsg] = useState('');
 
   const handleLogin = (e) => {
-    e.preventDefault();
-    const matchedUser = data.Users.find(
-      (user) => user.email === email && user.password === password
-    );
+  e.preventDefault();
 
-    if (!matchedUser) {
-      setErrorMsg('Email hoặc mật khẩu không chính xác.');
-    } else {
-      localStorage.setItem('loggedInUser', JSON.stringify(matchedUser));
-      const redirectTo = localStorage.getItem("redirectAfterLogin") || "/user/dashboard";
-      localStorage.removeItem("redirectAfterLogin");
-      navigate(redirectTo);
-    }
-  };
+  // Kiểm tra tài khoản admin
+  const adminCredentials = data.AdminDashboard?.AdminCredentials;
+  if (
+    email === adminCredentials?.email &&
+    password === adminCredentials?.password
+  ) {
+    const adminUser = {
+      email: adminCredentials.email,
+      role: "admin",
+      fullName: "Quản trị viên"
+    };
+    localStorage.setItem("loggedInUser", JSON.stringify(adminUser));
+    navigate("/admin/dashboard");
+    return;
+  }
+
+  // Kiểm tra người dùng thường
+  const matchedUser = data.Users.find(
+    (user) => user.email === email && user.password === password
+  );
+
+  if (!matchedUser) {
+    setErrorMsg("Email hoặc mật khẩu không chính xác.");
+  } else {
+    localStorage.setItem("loggedInUser", JSON.stringify({ ...matchedUser, role: "user" }));
+    const redirectTo = localStorage.getItem("redirectAfterLogin") || "/user/dashboard";
+    localStorage.removeItem("redirectAfterLogin");
+    navigate(redirectTo);
+  }
+};
+
 
   return (
     <Container className="py-5">
