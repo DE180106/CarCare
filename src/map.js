@@ -197,8 +197,8 @@ const StoreSystem = () => {
               <Nav.Link as={Link} to="/garages">
                 Garage
               </Nav.Link>
-              <Nav.Link as={Link} to="/about">
-                Giới thiệu
+              <Nav.Link as={Link} to="/map">
+                Tìm Gara
               </Nav.Link>
               <Nav.Link as={Link} to="/contact">
                 Liên hệ

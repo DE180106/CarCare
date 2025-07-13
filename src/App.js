@@ -14,6 +14,9 @@ import BookingForm from './booking';
 import AdminDashboard from './AdminDashboard';
 import GarageDashboard from './GarageDashboard';
 import GarageReviews from './GarageReviews';
+import StoreSystem from './map';
+import Contact from './userschat';
+
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
       <Route path="/admin/dashboard" element={<AdminDashboard />} />
       <Route path="/garage/dashboard" element={<GarageDashboard />} />
       <Route path="/garage/:id/reviews" element={<GarageReviews />} />
+      <Route path="/map" element={<StoreSystem />} />
+      <Route path="/userschat/:garageId" element={<Contact />} />
+
     </Routes>
   );
 }
