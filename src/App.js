@@ -13,7 +13,7 @@ import FeedbackPage from './Feedback';
 import BookingForm from './booking';
 import AdminDashboard from './AdminDashboard';
 import GarageDashboard from './GarageDashboard';
-
+import GarageReviews from './GarageReviews';
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
       <Route path="/booking" element={<BookingForm />} />
       <Route path="/admin/dashboard" element={<AdminDashboard />} />
       <Route path="/garage/dashboard" element={<GarageDashboard />} />
+      <Route path="/garage/:id/reviews" element={<GarageReviews />} />
     </Routes>
   );
 }
