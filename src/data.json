@@ -1,0 +1,1957 @@
+{
+  "Garages": [
+    {
+      "id": "g1",
+      "name": "Gara An Phát",
+      "address": "123 Đường Láng, Đống Đa, Hà Nội",
+      "latitude": 21.0183,
+      "longitude": 105.8176,
+      "phone": "0901234567",
+      "services": [
+        "Thay dầu",
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Dầu máy",
+        "Lọc dầu",
+        "Hệ thống phanh",
+        "Lọc gió động cơ",
+        "Gạt mưa: cao su gạt mưa"
+      ],
+      "openingHours": "08:00-18:00",
+      "rating": 4.6,
+      "status": "open",
+      "availableSlots": [
+        "08:00",
+        "09:00",
+        "10:00",
+        "14:00"
+      ],
+      "imageUrl": "https://topgara.vn/wp-content/uploads/2025/04/gara-o-to-an-phat.jpg"
+    },
+    {
+      "id": "g2",
+      "name": "Gara Minh Tâm",
+      "address": "456 Nguyễn Trãi, Thanh Xuân, Hà Nội",
+      "latitude": 20.9984,
+      "longitude": 105.8024,
+      "phone": "0909876543",
+      "services": [
+        "Sửa động cơ",
+        "Cân bằng lốp",
+        "Sửa điều hòa",
+        "Dầu hộp số",
+        "Dây đai dẫn động",
+        "Hệ thống lái",
+        "Lọc gió điều hòa"
+      ],
+      "openingHours": "07:30-17:30",
+      "rating": 4.3,
+      "status": "open",
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "15:00"
+      ],
+      "imageUrl": "https://icdn.dantri.com.vn/thumb_w/960/e4df2888ab/2016/11/19/dexuatcuabocongthuongseepchetcacgaraototunhan-1479501916208.jpg"
+    },
+    {
+      "id": "g3",
+      "name": "Gara Thành Công",
+      "address": "789 Giải Phóng, Hoàng Mai, Hà Nội",
+      "latitude": 20.9916,
+      "longitude": 105.8439,
+      "phone": "0912345678",
+      "services": [
+        "Thay phanh",
+        "Kiểm tra ắc quy",
+        "Thay dầu",
+        "Lọc dầu",
+        "Dầu phanh",
+        "Gạt mưa: cao su gạt mưa",
+        "Hệ thống làm mát",
+        "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"
+      ],
+      "openingHours": "08:00-18:00",
+      "rating": 4.8,
+      "status": "open",
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "13:00"
+      ],
+      "imageUrl": "https://storage.timviec365.vn/timviec365/pictures/images_03_2022/gara-o-to-la-gi.jpg"
+    },
+    {
+      "id": "g4",
+      "name": "Gara Hòa Bình",
+      "address": "321 Cầu Giấy, Hà Nội",
+      "latitude": 21.0332,
+      "longitude": 105.7989,
+      "phone": "0923456789",
+      "services": [
+        "Thay lốp",
+        "Sửa điều hòa",
+        "Kiểm tra động cơ",
+        "Hệ thống điện, điều hòa",
+        "Dầu máy",
+        "Sơn sửa phục hồi",
+        "Cần gạt mưa"
+      ],
+      "openingHours": "07:00-17:00",
+      "rating": 4.2,
+      "status": "closed",
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
+      "imageUrl": "https://tapchigiaothong.qltns.mediacdn.vn/tapchigiaothong.vn/files/thu.ha/2017/11/01/a0d-0178-1517.jpg"
+    },
+    {
+      "id": "g5",
+      "name": "Gara Việt Hưng",
+      "address": "654 Kim Mã, Ba Đình, Hà Nội",
+      "latitude": 21.0343,
+      "longitude": 105.817,
+      "phone": "0934567890",
+      "services": [
+        "Thay dầu",
+        "Sửa phanh",
+        "Cân bằng lốp",
+        "Lọc dầu",
+        "Lọc nhiên liệu",
+        "Hệ thống phanh",
+        "Lọc gió điều hòa"
+      ],
+      "openingHours": "08:00-18:00",
+      "rating": 4.5,
+      "status": "open",
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "15:00"
+      ],
+      "imageUrl": "https://autopro8.mediacdn.vn/thumb_w/640/134505113543774208/2022/10/28/gara-oto-2-tin-ban-xe-1666921699267496677625.jpg"
+    },
+    {
+      "id": "g6",
+      "name": "Gara Quang Minh",
+      "address": "111 Tây Sơn, Đống Đa, Hà Nội",
+      "latitude": 21.0067,
+      "longitude": 105.8232,
+      "phone": "0945678901",
+      "services": [
+        "Sửa động cơ",
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Hệ thống treo/gầm",
+        "Dầu máy",
+        "Lọc gió điều hòa",
+        "Bugi"
+      ],
+      "openingHours": "07:30-17:30",
+      "rating": 4.4,
+      "status": "open",
+      "availableSlots": [
+        "09:30",
+        "11:30",
+        "14:30"
+      ],
+      "imageUrl": "https://chupgiare.com/wp-content/uploads/2022/02/chup-hinh-quang-cao-gara-o-to-chuyen-nghiep-tai-hcm-4.jpg"
+    },
+    {
+      "id": "g7",
+      "name": "Gara Tân Phú",
+      "address": "222 Phạm Văn Đồng, Bắc Từ Liêm, Hà Nội",
+      "latitude": 21.0594,
+      "longitude": 105.7839,
+      "phone": "0956789012",
+      "services": [
+        "Thay dầu",
+        "Sửa điều hòa",
+        "Thay phanh",
+        "Gạt mưa: cao su gạt mưa",
+        "Hệ thống làm mát",
+        "Lọc dầu",
+        "Dầu phanh"
+      ],
+      "openingHours": "08:00-18:00",
+      "rating": 4.7,
+      "status": "open",
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
+      "imageUrl": "https://example.com/gara7.jpg"
+    },
+    {
+      "id": "g8",
+      "name": "Gara Hùng Vương",
+      "address": "333 Trần Khát Chân, Hai Bà Trưng, Hà Nội",
+      "latitude": 21.0124,
+      "longitude": 105.8602,
+      "phone": "0967890123",
+      "services": [
+        "Cân bằng lốp",
+        "Kiểm tra động cơ",
+        "Thay dầu",
+        "Lọc nhiên liệu",
+        "Dầu hộp số",
+        "Gạt mưa: cao su gạt mưa",
+        "Hệ thống điện, điều hòa"
+      ],
+      "openingHours": "07:00-17:00",
+      "rating": 4.1,
+      "status": "closed",
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
+      "imageUrl": "https://example.com/gara8.jpg"
+    },
+    {
+      "id": "g9",
+      "name": "Gara Đại Phát",
+      "address": "444 Lạc Long Quân, Tây Hồ, Hà Nội",
+      "latitude": 21.0709,
+      "longitude": 105.8121,
+      "phone": "0978901234",
+      "services": [
+        "Thay phanh",
+        "Sửa điều hòa",
+        "Thay lốp",
+        "Dầu máy",
+        "Bugi",
+        "Hệ thống treo/gầm",
+        "Dầu phanh"
+      ],
+      "openingHours": "08:00-18:00",
+      "rating": 4.6,
+      "status": "open",
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "15:30"
+      ],
+      "imageUrl": "https://example.com/gara9.jpg"
+    },
+    {
+      "id": "g10",
+      "name": "Gara Nam Định",
+      "address": "555 Nguyễn Văn Cừ, Long Biên, Hà Nội",
+      "latitude": 21.0453,
+      "longitude": 105.8781,
+      "phone": "0989012345",
+      "services": [
+        "Thay dầu",
+        "Kiểm tra ắc quy",
+        "Sửa động cơ",
+        "Lọc gió động cơ",
+        "Dầu hộp số",
+        "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"
+      ],
+      "openingHours": "07:30-17:30",
+      "rating": 4.3,
+      "status": "open",
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "14:00"
+      ],
+      "imageUrl": "https://example.com/gara10.jpg"
+    },
+    {
+      "id": "g11",
+      "name": "Gara Hoàng Anh",
+      "address": "666 Đê La Thành, Ba Đình, Hà Nội",
+      "latitude": 21.026,
+      "longitude": 105.8182,
+      "phone": "0990123456",
+      "services": [
+        "Thay lốp",
+        "Cân bằng lốp",
+        "Thay dầu",
+        "Gạt mưa: cao su gạt mưa",
+        "Lọc dầu",
+        "Hệ thống phanh",
+        "Lọc gió điều hòa"
+      ],
+      "openingHours": "08:00-18:00",
+      "rating": 4.5,
+      "status": "open",
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
+      "imageUrl": "https://example.com/gara11.jpg"
+    },
+    {
+      "id": "g12",
+      "name": "Gara Bình Minh",
+      "address": "777 Hoàng Quốc Việt, Cầu Giấy, Hà Nội",
+      "latitude": 21.0463,
+      "longitude": 105.7913,
+      "phone": "0901234568",
+      "services": [
+        "Sửa điều hòa",
+        "Thay phanh",
+        "Kiểm tra ắc quy",
+        "Dây đai dẫn động",
+        "Dầu phanh",
+        "Hệ thống nội thất",
+        "Chẩn đoán đèn báo lỗi và cập nhật phần mềm"
+      ],
+      "openingHours": "07:00-17:00",
+      "rating": 4.2,
+      "status": "closed",
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
+      "imageUrl": "https://example.com/gara12.jpg"
+    },
+    {
+      "id": "g13",
+      "name": "Gara Thanh Xuân",
+      "address": "888 Vũ Tông Phan, Thanh Xuân, Hà Nội",
+      "latitude": 20.9938,
+      "longitude": 105.8115,
+      "phone": "0902345679",
+      "services": [
+        "Thay dầu",
+        "Sửa động cơ",
+        "Thay lốp",
+        "Lọc gió động cơ",
+        "Bugi",
+        "Lọc dầu",
+        "Cần gạt mưa"
+      ],
+      "openingHours": "08:00-18:00",
+      "rating": 4.7,
+      "status": "open",
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "15:30"
+      ],
+      "imageUrl": "https://example.com/gara13.jpg"
+    },
+    {
+      "id": "g14",
+      "name": "Gara Đông Anh",
+      "address": "999 Quốc lộ 3, Đông Anh, Hà Nội",
+      "latitude": 21.1394,
+      "longitude": 105.8264,
+      "phone": "0903456780",
+      "services": [
+        "Kiểm tra ắc quy",
+        "Cân bằng lốp",
+        "Sửa điều hòa",
+        "Hệ thống điện, điều hòa",
+        "Dầu hộp số",
+        "Dây đai dẫn động"
+      ],
+      "openingHours": "07:30-17:30",
+      "rating": 4.4,
+      "status": "open",
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "14:00"
+      ],
+      "imageUrl": "https://example.com/gara14.jpg"
+    },
+    {
+      "id": "g15",
+      "name": "Gara Hà Đông",
+      "address": "1010 Quang Trung, Hà Đông, Hà Nội",
+      "latitude": 20.9712,
+      "longitude": 105.775,
+      "phone": "0904567891",
+      "services": [
+        "Thay phanh",
+        "Thay dầu",
+        "Sửa động cơ",
+        "Lọc nhiên liệu",
+        "Lọc gió điều hòa",
+        "Nước làm mát",
+        "Gạt mưa: cao su gạt mưa"
+      ],
+      "openingHours": "08:00-18:00",
+      "rating": 4.6,
+      "status": "open",
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
+      "imageUrl": "https://example.com/gara15.jpg"
+    },
+    {
+      "id": "g16",
+      "name": "Gara Long Biên",
+      "address": "1111 Ngọc Lâm, Long Biên, Hà Nội",
+      "latitude": 21.0498,
+      "longitude": 105.8776,
+      "phone": "0905678902",
+      "services": [
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Sửa điều hòa",
+        "Hệ thống làm mát",
+        "Dầu máy",
+        "Lọc dầu",
+        "Sơn sửa phục hồi"
+      ],
+      "openingHours": "07:00-17:00",
+      "rating": 4.3,
+      "status": "closed",
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
+      "imageUrl": "https://example.com/gara16.jpg"
+    },
+    {
+      "id": "g17",
+      "name": "Gara Nam Từ Liêm",
+      "address": "1212 Mễ Trì, Nam Từ Liêm, Hà Nội",
+      "latitude": 21.0072,
+      "longitude": 105.7644,
+      "phone": "0906789013",
+      "services": [
+        "Thay dầu",
+        "Cân bằng lốp",
+        "Thay phanh",
+        "Bugi",
+        "Lọc gió động cơ",
+        "Hệ thống treo/gầm",
+        "Dầu phanh"
+      ],
+      "openingHours": "08:00-18:00",
+      "rating": 4.5,
+      "status": "open",
+      "availableSlots": [
+        "08:30",
+        "10:30",
+        "15:30"
+      ],
+      "imageUrl": "https://example.com/gara17.jpg"
+    },
+    {
+      "id": "g18",
+      "name": "Gara Hai Bà Trưng",
+      "address": "1313 Lò Đúc, Hai Bà Trưng, Hà Nội",
+      "latitude": 21.0173,
+      "longitude": 105.8605,
+      "phone": "0907890124",
+      "services": [
+        "Sửa động cơ",
+        "Thay lốp",
+        "Kiểm tra ắc quy",
+        "Lọc dầu",
+        "Dây đai dẫn động",
+        "Dầu hộp số",
+        "Hệ thống điện, điều hòa"
+      ],
+      "openingHours": "07:30-17:30",
+      "rating": 4.4,
+      "status": "open",
+      "availableSlots": [
+        "09:00",
+        "11:00",
+        "14:00"
+      ],
+      "imageUrl": "https://example.com/gara18.jpg"
+    },
+    {
+      "id": "g19",
+      "name": "Gara Ba Đình",
+      "address": "1414 Kim Mã, Ba Đình, Hà Nội",
+      "latitude": 21.0341,
+      "longitude": 105.8147,
+      "phone": "0908901235",
+      "services": [
+        "Thay dầu",
+        "Sửa điều hòa",
+        "Thay phanh",
+        "Hệ thống phanh",
+        "Gạt mưa: cao su gạt mưa",
+        "Lọc gió điều hòa",
+        "Hệ thống nội thất"
+      ],
+      "openingHours": "08:00-18:00",
+      "rating": 4.6,
+      "status": "open",
+      "availableSlots": [
+        "08:00",
+        "10:00",
+        "13:00"
+      ],
+      "imageUrl": "https://example.com/gara19.jpg"
+    },
+    {
+      "id": "g20",
+      "name": "Gara Cầu Giấy",
+      "address": "1515 Xuân Thủy, Cầu Giấy, Hà Nội",
+      "latitude": 21.0384,
+      "longitude": 105.7846,
+      "phone": "0909012346",
+      "services": [
+        "Kiểm tra ắc quy",
+        "Cân bằng lốp",
+        "Sửa động cơ",
+        "Lọc nhiên liệu",
+        "Thay phanh",
+        "Lọc dầu",
+        "Dầu phanh"
+      ],
+      "openingHours": "07:00-17:00",
+      "rating": 4.3,
+      "status": "closed",
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
+      "imageUrl": "https://example.com/gara20.jpg"
+    }
+  ],
+  "Users": [
+    {
+      "id": "u1",
+      "fullName": "Nguyễn Văn An",
+      "email": "an.nguyen@example.com",
+      "phone": "0912345678",
+      "address": "123 Đường Láng, Đống Đa, Hà Nội",
+      "password": "hashedPass123",
+      "avatarUrl": "https://example.com/avatar1.jpg",
+      "car": {
+        "make": "Toyota",
+        "model": "Vios",
+        "licensePlate": "29A-123.45"
+      }
+    },
+    {
+      "id": "u2",
+      "fullName": "Trần Thị Bình",
+      "email": "binh.tran@example.com",
+      "phone": "0913456789",
+      "address": "456 Nguyễn Trãi, Thanh Xuân, Hà Nội",
+      "password": "hashedPass456",
+      "avatarUrl": "https://example.com/avatar2.jpg",
+      "car": {
+        "make": "Honda",
+        "model": "Civic",
+        "licensePlate": "30A-456.78"
+      }
+    },
+    {
+      "id": "u3",
+      "fullName": "Lê Văn Cường",
+      "email": "cuong.le@example.com",
+      "phone": "0914567890",
+      "address": "789 Giải Phóng, Hoàng Mai, Hà Nội",
+      "password": "hashedPass789",
+      "avatarUrl": "https://example.com/avatar3.jpg",
+      "car": {
+        "make": "Hyundai",
+        "model": "Accent",
+        "licensePlate": "29B-789.01"
+      }
+    },
+    {
+      "id": "u4",
+      "fullName": "Phạm Thị Dung",
+      "email": "dung.pham@example.com",
+      "phone": "0915678901",
+      "address": "321 Cầu Giấy, Hà Nội",
+      "password": "hashedPass012",
+      "avatarUrl": "https://example.com/avatar4.jpg",
+      "car": {
+        "make": "Kia",
+        "model": "Cerato",
+        "licensePlate": "30B-234.56"
+      }
+    },
+    {
+      "id": "u5",
+      "fullName": "Hoàng Văn Em",
+      "email": "em.hoang@example.com",
+      "phone": "0916789012",
+      "address": "654 Kim Mã, Ba Đình, Hà Nội",
+      "password": "hashedPass345",
+      "avatarUrl": "https://example.com/avatar5.jpg",
+      "car": {
+        "make": "Mazda",
+        "model": "CX-5",
+        "licensePlate": "29A-567.89"
+      }
+    },
+    {
+      "id": "u6",
+      "fullName": "Đỗ Thị Fleur",
+      "email": "fleur.do@example.com",
+      "phone": "0917890123",
+      "address": "111 Tây Sơn, Đống Đa, Hà Nội",
+      "password": "hashedPass678",
+      "avatarUrl": "https://example.com/avatar6.jpg",
+      "car": {
+        "make": "Toyota",
+        "model": "Camry",
+        "licensePlate": "30A-901.23"
+      }
+    },
+    {
+      "id": "u7",
+      "fullName": "Vũ Văn Giang",
+      "email": "giang.vu@example.com",
+      "phone": "0918901234",
+      "address": "222 Phạm Văn Đồng, Bắc Từ Liêm, Hà Nội",
+      "password": "hashedPass901",
+      "avatarUrl": "https://example.com/avatar7.jpg",
+      "car": {
+        "make": "Honda",
+        "model": "CR-V",
+        "licensePlate": "29B-345.67"
+      }
+    },
+    {
+      "id": "u8",
+      "fullName": "Bùi Thị Hà",
+      "email": "ha.bui@example.com",
+      "phone": "0919012345",
+      "address": "333 Trần Khát Chân, Hai Bà Trưng, Hà Nội",
+      "password": "hashedPass234",
+      "avatarUrl": "https://example.com/avatar8.jpg",
+      "car": {
+        "make": "Hyundai",
+        "model": "Tucson",
+        "licensePlate": "30B-678.90"
+      }
+    },
+    {
+      "id": "u9",
+      "fullName": "Ngô Văn Inh",
+      "email": "inh.ngo@example.com",
+      "phone": "0920123456",
+      "address": "444 Lạc Long Quân, Tây Hồ, Hà Nội",
+      "password": "hashedPass567",
+      "avatarUrl": "https://example.com/avatar9.jpg",
+      "car": {
+        "make": "Kia",
+        "model": "Seltos",
+        "licensePlate": "29A-012.34"
+      }
+    },
+    {
+      "id": "u10",
+      "fullName": "Đặng Thị Kim",
+      "email": "kim.dang@example.com",
+      "phone": "0921234567",
+      "address": "555 Nguyễn Văn Cừ, Long Biên, Hà Nội",
+      "password": "hashedPass890",
+      "avatarUrl": "https://example.com/avatar10.jpg",
+      "car": {
+        "make": "Mazda",
+        "model": "3",
+        "licensePlate": "30A-345.67"
+      }
+    },
+    {
+      "id": "u11",
+      "fullName": "Trương Văn Lâm",
+      "email": "lam.truong@example.com",
+      "phone": "0922345678",
+      "address": "666 Đê La Thành, Ba Đình, Hà Nội",
+      "password": "hashedPass123",
+      "avatarUrl": "https://example.com/avatar11.jpg",
+      "car": {
+        "make": "Toyota",
+        "model": "Corolla",
+        "licensePlate": "29B-678.90"
+      }
+    },
+    {
+      "id": "u12",
+      "fullName": "Lý Thị Mai",
+      "email": "mai.ly@example.com",
+      "phone": "0923456789",
+      "address": "777 Hoàng Quốc Việt, Cầu Giấy, Hà Nội",
+      "password": "hashedPass456",
+      "avatarUrl": "https://example.com/avatar12.jpg",
+      "car": {
+        "make": "Honda",
+        "model": "City",
+        "licensePlate": "30A-901.23"
+      }
+    },
+    {
+      "id": "u13",
+      "fullName": "Phan Văn Nam",
+      "email": "nam.phan@example.com",
+      "phone": "0924567890",
+      "address": "888 Vũ Tông Phan, Thanh Xuân, Hà Nội",
+      "password": "hashedPass789",
+      "avatarUrl": "https://example.com/avatar13.jpg",
+      "car": {
+        "make": "Hyundai",
+        "model": "Santa Fe",
+        "licensePlate": "29A-234.56"
+      }
+    },
+    {
+      "id": "u14",
+      "fullName": "Hà Thị Oanh",
+      "email": "oanh.ha@example.com",
+      "phone": "0925678901",
+      "address": "999 Quốc lộ 3, Đông Anh, Hà Nội",
+      "password": "hashedPass012",
+      "avatarUrl": "https://example.com/avatar14.jpg",
+      "car": {
+        "make": "Kia",
+        "model": "Morning",
+        "licensePlate": "30B-567.89"
+      }
+    },
+    {
+      "id": "u15",
+      "fullName": "Nguyễn Văn Phong",
+      "email": "phong.nguyen@example.com",
+      "phone": "0926789012",
+      "address": "1010 Quang Trung, Hà Đông, Hà Nội",
+      "password": "hashedPass345",
+      "avatarUrl": "https://example.com/avatar15.jpg",
+      "car": {
+        "make": "Mazda",
+        "model": "CX-8",
+        "licensePlate": "29A-890.12"
+      }
+    },
+    {
+      "id": "u16",
+      "fullName": "Trần Thị Quỳnh",
+      "email": "quynh.tran@example.com",
+      "phone": "0927890123",
+      "address": "1111 Ngọc Lâm, Long Biên, Hà Nội",
+      "password": "hashedPass678",
+      "avatarUrl": "https://example.com/avatar16.jpg",
+      "car": {
+        "make": "Toyota",
+        "model": "Fortuner",
+        "licensePlate": "30A-123.45"
+      }
+    },
+    {
+      "id": "u17",
+      "fullName": "Lê Văn Rồng",
+      "email": "rong.le@example.com",
+      "phone": "0928901234",
+      "address": "1212 Mễ Trì, Nam Từ Liêm, Hà Nội",
+      "password": "hashedPass901",
+      "avatarUrl": "https://example.com/avatar17.jpg",
+      "car": {
+        "make": "Honda",
+        "model": "HR-V",
+        "licensePlate": "29B-456.78"
+      }
+    },
+    {
+      "id": "u18",
+      "fullName": "Phạm Thị Sen",
+      "email": "sen.pham@example.com",
+      "phone": "0929012345",
+      "address": "1313 Lò Đúc, Hai Bà Trưng, Hà Nội",
+      "password": "hashedPass234",
+      "avatarUrl": "https://example.com/avatar18.jpg",
+      "car": {
+        "make": "Hyundai",
+        "model": "Kona",
+        "licensePlate": "30A-789.01"
+      }
+    },
+    {
+      "id": "u19",
+      "fullName": "Hoàng Văn Tài",
+      "email": "tai.hoang@example.com",
+      "phone": "0930123456",
+      "address": "1414 Kim Mã, Ba Đình, Hà Nội",
+      "password": "hashedPass567",
+      "avatarUrl": "https://example.com/avatar19.jpg",
+      "car": {
+        "make": "Kia",
+        "model": "Sorento",
+        "licensePlate": "29A-234.56"
+      }
+    },
+    {
+      "id": "u20",
+      "fullName": "Đỗ Thị Út",
+      "email": "ut.do@example.com",
+      "phone": "0931234567",
+      "address": "1515 Xuân Thủy, Cầu Giấy, Hà Nội",
+      "password": "hashedPass890",
+      "avatarUrl": "https://example.com/avatar20.jpg",
+      "car": {
+        "make": "Mazda",
+        "model": "6",
+        "licensePlate": "30B-567.89"
+      }
+    },
+    {
+      "id": "u21",
+      "fullName": "Vũ Văn Vương",
+      "email": "vuong.vu@example.com",
+      "phone": "0932345678",
+      "address": "1616 Đường Láng, Đống Đa, Hà Nội",
+      "password": "hashedPass123",
+      "avatarUrl": "https://example.com/avatar21.jpg",
+      "car": {
+        "make": "Toyota",
+        "model": "Yaris",
+        "licensePlate": "29A-890.12"
+      }
+    },
+    {
+      "id": "u22",
+      "fullName": "Bùi Thị Xuân",
+      "email": "xuan.bui@example.com",
+      "phone": "0933456789",
+      "address": "1717 Nguyễn Trãi, Thanh Xuân, Hà Nội",
+      "password": "hashedPass456",
+      "avatarUrl": "https://example.com/avatar22.jpg",
+      "car": {
+        "make": "Honda",
+        "model": "Jazz",
+        "licensePlate": "30A-123.45"
+      }
+    },
+    {
+      "id": "u23",
+      "fullName": "Ngô Văn Ý",
+      "email": "y.ngo@example.com",
+      "phone": "0934567890",
+      "address": "1818 Giải Phóng, Hoàng Mai, Hà Nội",
+      "password": "hashedPass789",
+      "avatarUrl": "https://example.com/avatar23.jpg",
+      "car": {
+        "make": "Hyundai",
+        "model": "Creta",
+        "licensePlate": "29B-456.78"
+      }
+    },
+    {
+      "id": "u24",
+      "fullName": "Đặng Thị Zoa",
+      "email": "zoa.dang@example.com",
+      "phone": "0935678901",
+      "address": "1919 Cầu Giấy, Hà Nội",
+      "password": "hashedPass012",
+      "avatarUrl": "https://example.com/avatar24.jpg",
+      "car": {
+        "make": "Kia",
+        "model": "Sportage",
+        "licensePlate": "30A-789.01"
+      }
+    },
+    {
+      "id": "u25",
+      "fullName": "Trương Văn Ân",
+      "email": "an.truong@example.com",
+      "phone": "0936789012",
+      "address": "2020 Kim Mã, Ba Đình, Hà Nội",
+      "password": "hashedPass345",
+      "avatarUrl": "https://example.com/avatar25.jpg",
+      "car": {
+        "make": "Mazda",
+        "model": "CX-3",
+        "licensePlate": "29A-234.56"
+      }
+    },
+    {
+      "id": "u26",
+      "fullName": "Lý Thị Bích",
+      "email": "bich.ly@example.com",
+      "phone": "0937890123",
+      "address": "2121 Tây Sơn, Đống Đa, Hà Nội",
+      "password": "hashedPass678",
+      "avatarUrl": "https://example.com/avatar26.jpg",
+      "car": {
+        "make": "Toyota",
+        "model": "RAV4",
+        "licensePlate": "30B-567.89"
+      }
+    },
+    {
+      "id": "u27",
+      "fullName": "Phan Văn Cảnh",
+      "email": "canh.phan@example.com",
+      "phone": "0938901234",
+      "address": "2222 Phạm Văn Đồng, Bắc Từ Liêm, Hà Nội",
+      "password": "hashedPass901",
+      "avatarUrl": "https://example.com/avatar27.jpg",
+      "car": {
+        "make": "Honda",
+        "model": "Civic",
+        "licensePlate": "29A-890.12"
+      }
+    },
+    {
+      "id": "u28",
+      "fullName": "Hà Thị Diệu",
+      "email": "dieu.ha@example.com",
+      "phone": "0939012345",
+      "address": "2323 Trần Khát Chân, Hai Bà Trưng, Hà Nội",
+      "password": "hashedPass234",
+      "avatarUrl": "https://example.com/avatar28.jpg",
+      "car": {
+        "make": "Hyundai",
+        "model": "Venue",
+        "licensePlate": "30A-123.45"
+      }
+    },
+    {
+      "id": "u29",
+      "fullName": "Nguyễn Văn Ê",
+      "email": "e.nguyen@example.com",
+      "phone": "0940123456",
+      "address": "2424 Lạc Long Quân, Tây Hồ, Hà Nội",
+      "password": "hashedPass567",
+      "avatarUrl": "https://example.com/avatar29.jpg",
+      "car": {
+        "make": "Kia",
+        "model": "Rio",
+        "licensePlate": "29B-456.78"
+      }
+    },
+    {
+      "id": "u30",
+      "fullName": "Trần Thị Gấm",
+      "email": "gam.tran@example.com",
+      "phone": "0941234567",
+      "address": "2525 Nguyễn Văn Cừ, Long Biên, Hà Nội",
+      "password": "hashedPass890",
+      "avatarUrl": "https://example.com/avatar30.jpg",
+      "car": {
+        "make": "Mazda",
+        "model": "2",
+        "licensePlate": "30A-789.01"
+      }
+    },
+    {
+      "id": "u1752350713095",
+      "fullName": "Pham Ngoc",
+      "email": "phamngoc0045@gmail.com",
+      "phone": "123456789",
+      "address": "87 East 2580 South",
+      "password": "11112222",
+      "avatarUrl": "a",
+      "car": {
+        "make": "a",
+        "model": "a",
+        "licensePlate": "a"
+      }
+    },
+    {
+      "id": "g1",
+      "fullName": "Garage An Phát",
+      "email": "garage01@carcare.vn",
+      "password": "123456",
+      "phone": "0901000001",
+      "address": "Số 1, Đường Láng, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G1",
+      "role": "garage"
+    },
+    {
+      "id": "g2",
+      "fullName": "Garage Bảo Tín",
+      "email": "garage02@carcare.vn",
+      "password": "123456",
+      "phone": "0901000002",
+      "address": "Số 2, Cầu Giấy, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G2",
+      "role": "garage"
+    },
+    {
+      "id": "g3",
+      "fullName": "Garage Cường Thịnh",
+      "email": "garage03@carcare.vn",
+      "password": "123456",
+      "phone": "0901000003",
+      "address": "Số 3, Kim Mã, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G3",
+      "role": "garage"
+    },
+    {
+      "id": "g4",
+      "fullName": "Garage Đại Lợi",
+      "email": "garage04@carcare.vn",
+      "password": "123456",
+      "phone": "0901000004",
+      "address": "Số 4, Trần Duy Hưng, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G4",
+      "role": "garage"
+    },
+    {
+      "id": "g5",
+      "fullName": "Garage EcoTech",
+      "email": "garage05@carcare.vn",
+      "password": "123456",
+      "phone": "0901000005",
+      "address": "Số 5, Nguyễn Trãi, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G5",
+      "role": "garage"
+    },
+    {
+      "id": "g6",
+      "fullName": "Garage Phát Tài",
+      "email": "garage06@carcare.vn",
+      "password": "123456",
+      "phone": "0901000006",
+      "address": "Số 6, Phạm Văn Đồng, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G6",
+      "role": "garage"
+    },
+    {
+      "id": "g7",
+      "fullName": "Garage Thành Công",
+      "email": "garage07@carcare.vn",
+      "password": "123456",
+      "phone": "0901000007",
+      "address": "Số 7, Xuân Thủy, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G7",
+      "role": "garage"
+    },
+    {
+      "id": "g8",
+      "fullName": "Garage Hoàng Gia",
+      "email": "garage08@carcare.vn",
+      "password": "123456",
+      "phone": "0901000008",
+      "address": "Số 8, Nguyễn Văn Cừ, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G8",
+      "role": "garage"
+    },
+    {
+      "id": "g9",
+      "fullName": "Garage Kim Long",
+      "email": "garage09@carcare.vn",
+      "password": "123456",
+      "phone": "0901000009",
+      "address": "Số 9, Lạc Long Quân, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G9",
+      "role": "garage"
+    },
+    {
+      "id": "g10",
+      "fullName": "Garage Tâm Đức",
+      "email": "garage10@carcare.vn",
+      "password": "123456",
+      "phone": "0901000010",
+      "address": "Số 10, Hồ Tùng Mậu, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G10",
+      "role": "garage"
+    },
+    {
+      "id": "g11",
+      "fullName": "Garage Việt Auto",
+      "email": "garage11@carcare.vn",
+      "password": "123456",
+      "phone": "0901000011",
+      "address": "Số 11, Giải Phóng, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G11",
+      "role": "garage"
+    },
+    {
+      "id": "g12",
+      "fullName": "Garage Phúc Hưng",
+      "email": "garage12@carcare.vn",
+      "password": "123456",
+      "phone": "0901000012",
+      "address": "Số 12, Hoàng Hoa Thám, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G12",
+      "role": "garage"
+    },
+    {
+      "id": "g13",
+      "fullName": "Garage Trường Thành",
+      "email": "garage13@carcare.vn",
+      "password": "123456",
+      "phone": "0901000013",
+      "address": "Số 13, Tôn Đức Thắng, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G13",
+      "role": "garage"
+    },
+    {
+      "id": "g14",
+      "fullName": "Garage Hòa Bình",
+      "email": "garage14@carcare.vn",
+      "password": "123456",
+      "phone": "0901000014",
+      "address": "Số 14, Thanh Xuân, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G14",
+      "role": "garage"
+    },
+    {
+      "id": "g15",
+      "fullName": "Garage Đông Dương",
+      "email": "garage15@carcare.vn",
+      "password": "123456",
+      "phone": "0901000015",
+      "address": "Số 15, Bạch Mai, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G15",
+      "role": "garage"
+    },
+    {
+      "id": "g16",
+      "fullName": "Garage Quang Minh",
+      "email": "garage16@carcare.vn",
+      "password": "123456",
+      "phone": "0901000016",
+      "address": "Số 16, Tây Hồ, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G16",
+      "role": "garage"
+    },
+    {
+      "id": "g17",
+      "fullName": "Garage Nhật Minh",
+      "email": "garage17@carcare.vn",
+      "password": "123456",
+      "phone": "0901000017",
+      "address": "Số 17, Lê Văn Lương, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G17",
+      "role": "garage"
+    },
+    {
+      "id": "g18",
+      "fullName": "Garage An Khang",
+      "email": "garage18@carcare.vn",
+      "password": "123456",
+      "phone": "0901000018",
+      "address": "Số 18, Trung Kính, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G18",
+      "role": "garage"
+    },
+    {
+      "id": "g19",
+      "fullName": "Garage Minh Châu",
+      "email": "garage19@carcare.vn",
+      "password": "123456",
+      "phone": "0901000019",
+      "address": "Số 19, Phố Huế, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G19",
+      "role": "garage"
+    },
+    {
+      "id": "g20",
+      "fullName": "Garage Vạn Phát",
+      "email": "garage20@carcare.vn",
+      "password": "123456",
+      "phone": "0901000020",
+      "address": "Số 20, Trương Định, Hà Nội",
+      "avatarUrl": "https://via.placeholder.com/80?text=G20",
+      "role": "garage"
+    }
+  ],
+  "Bookings": [
+    {
+      "id": "b1",
+      "userId": "u1",
+      "garageId": "g1",
+      "date": "2025-07-04T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay dầu",
+      "status": "confirmed",
+      "note": "Dùng dầu tổng hợp"
+    },
+    {
+      "id": "b2",
+      "userId": "u2",
+      "garageId": "g2",
+      "date": "2025-07-05T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Sửa điều hòa",
+      "status": "pending",
+      "note": "Điều hòa không mát"
+    },
+    {
+      "id": "b3",
+      "userId": "u3",
+      "garageId": "g3",
+      "date": "2025-07-06T00:00:00Z",
+      "time": "08:30",
+      "serviceType": "Thay phanh",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b4",
+      "userId": "u4",
+      "garageId": "g4",
+      "date": "2025-07-07T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Thay lốp",
+      "status": "completed",
+      "note": "Lốp Michelin"
+    },
+    {
+      "id": "b5",
+      "userId": "u5",
+      "garageId": "g5",
+      "date": "2025-07-08T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay dầu",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b6",
+      "userId": "u6",
+      "garageId": "g6",
+      "date": "2025-07-09T00:00:00Z",
+      "time": "09:30",
+      "serviceType": "Sửa động cơ",
+      "status": "pending",
+      "note": "Động cơ rung mạnh"
+    },
+    {
+      "id": "b7",
+      "userId": "u7",
+      "garageId": "g7",
+      "date": "2025-07-10T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay dầu",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b8",
+      "userId": "u8",
+      "garageId": "g8",
+      "date": "2025-07-11T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Cân bằng lốp",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b9",
+      "userId": "u9",
+      "garageId": "g9",
+      "date": "2025-07-12T00:00:00Z",
+      "time": "08:30",
+      "serviceType": "Thay phanh",
+      "status": "cancelled",
+      "note": "Hủy do bận"
+    },
+    {
+      "id": "b10",
+      "userId": "u10",
+      "garageId": "g10",
+      "date": "2025-07-13T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Thay dầu",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b11",
+      "userId": "u11",
+      "garageId": "g11",
+      "date": "2025-07-14T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay lốp",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b12",
+      "userId": "u12",
+      "garageId": "g12",
+      "date": "2025-07-15T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Sửa điều hòa",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "b13",
+      "userId": "u13",
+      "garageId": "g13",
+      "date": "2025-07-16T00:00:00Z",
+      "time": "08:30",
+      "serviceType": "Thay dầu",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b14",
+      "userId": "u14",
+      "garageId": "g14",
+      "date": "2025-07-17T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Kiểm tra ắc quy",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b15",
+      "userId": "u15",
+      "garageId": "g15",
+      "date": "2025-07-18T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay phanh",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b16",
+      "userId": "u16",
+      "garageId": "g16",
+      "date": "2025-07-19T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Thay lốp",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b17",
+      "userId": "u17",
+      "garageId": "g17",
+      "date": "2025-07-20T00:00:00Z",
+      "time": "08:30",
+      "serviceType": "Thay dầu",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "b18",
+      "userId": "u18",
+      "garageId": "g18",
+      "date": "2025-07-21T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Sửa động cơ",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b19",
+      "userId": "u19",
+      "garageId": "g19",
+      "date": "2025-07-22T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay dầu",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b20",
+      "userId": "u20",
+      "garageId": "g20",
+      "date": "2025-07-23T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Kiểm tra ắc quy",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b21",
+      "userId": "u21",
+      "garageId": "g1",
+      "date": "2025-07-24T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay lốp",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b22",
+      "userId": "u22",
+      "garageId": "g2",
+      "date": "2025-07-25T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Sửa điều hòa",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "b23",
+      "userId": "u23",
+      "garageId": "g3",
+      "date": "2025-07-26T00:00:00Z",
+      "time": "08:30",
+      "serviceType": "Thay phanh",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b24",
+      "userId": "u24",
+      "garageId": "g4",
+      "date": "2025-07-27T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Thay lốp",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b25",
+      "userId": "u25",
+      "garageId": "g5",
+      "date": "2025-07-28T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay dầu",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b26",
+      "userId": "u26",
+      "garageId": "g6",
+      "date": "2025-07-29T00:00:00Z",
+      "time": "09:30",
+      "serviceType": "Sửa động cơ",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "b27",
+      "userId": "u27",
+      "garageId": "g7",
+      "date": "2025-07-30T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay dầu",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b28",
+      "userId": "u28",
+      "garageId": "g8",
+      "date": "2025-07-31T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Cân bằng lốp",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b29",
+      "userId": "u29",
+      "garageId": "g9",
+      "date": "2025-08-01T00:00:00Z",
+      "time": "08:30",
+      "serviceType": "Thay phanh",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b30",
+      "userId": "u30",
+      "garageId": "g10",
+      "date": "2025-08-02T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Thay dầu",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b31",
+      "userId": "u1",
+      "garageId": "g11",
+      "date": "2025-08-03T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay lốp",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b32",
+      "userId": "u2",
+      "garageId": "g12",
+      "date": "2025-08-04T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Sửa điều hòa",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "b33",
+      "userId": "u3",
+      "garageId": "g13",
+      "date": "2025-08-05T00:00:00Z",
+      "time": "08:30",
+      "serviceType": "Thay dầu",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b34",
+      "userId": "u4",
+      "garageId": "g14",
+      "date": "2025-08-06T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Kiểm tra ắc quy",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b35",
+      "userId": "u5",
+      "garageId": "g15",
+      "date": "2025-08-07T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay phanh",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b36",
+      "userId": "u6",
+      "garageId": "g16",
+      "date": "2025-08-08T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Thay lốp",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b37",
+      "userId": "u7",
+      "garageId": "g17",
+      "date": "2025-08-09T00:00:00Z",
+      "time": "08:30",
+      "serviceType": "Thay dầu",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "b38",
+      "userId": "u8",
+      "garageId": "g18",
+      "date": "2025-08-10T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Sửa động cơ",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b39",
+      "userId": "u9",
+      "garageId": "g19",
+      "date": "2025-08-11T00:00:00Z",
+      "time": "08:00",
+      "serviceType": "Thay dầu",
+      "status": "confirmed",
+      "note": ""
+    },
+    {
+      "id": "b40",
+      "userId": "u10",
+      "garageId": "g20",
+      "date": "2025-08-12T00:00:00Z",
+      "time": "09:00",
+      "serviceType": "Kiểm tra ắc quy",
+      "status": "completed",
+      "note": ""
+    },
+    {
+      "id": "b41",
+      "userId": "u1",
+      "garageId": "g3",
+      "date": "2025-07-13T00:00:00.000Z",
+      "time": "08:30",
+      "serviceType": "Kiểm tra ắc quy",
+      "status": "pending",
+      "note": "2we"
+    },
+    {
+      "id": "b42",
+      "userId": "u11",
+      "garageId": "g11",
+      "date": "2025-07-13T00:00:00.000Z",
+      "time": "08:00",
+      "serviceType": "Thay dầu, Thay lốp",
+      "status": "pending",
+      "note": "adasdasdas"
+    },
+    {
+      "id": "b43",
+      "userId": "u18",
+      "garageId": "g1",
+      "date": "2025-07-23T00:00:00.000Z",
+      "time": "08:00",
+      "serviceType": "Thay dầu",
+      "status": "pending",
+      "note": ""
+    }
+  ],
+  "Feedback": [
+    {
+      "id": "f1",
+      "userId": "u1",
+      "garageId": "g1",
+      "rating": 5,
+      "comment": "Dịch vụ nhanh chóng, nhân viên thân thiện!",
+      "timestamp": "2025-07-04T09:00:00Z"
+    },
+    {
+      "id": "f2",
+      "userId": "u2",
+      "garageId": "g2",
+      "rating": 4,
+      "comment": "Tốt nhưng chờ hơi lâu.",
+      "timestamp": "2025-07-05T10:00:00Z"
+    },
+    {
+      "id": "f3",
+      "userId": "u3",
+      "garageId": "g3",
+      "rating": 5,
+      "comment": "Thay phanh rất chuyên nghiệp!",
+      "timestamp": "2025-07-06T09:30:00Z"
+    },
+    {
+      "id": "f4",
+      "userId": "u4",
+      "garageId": "g4",
+      "rating": 4,
+      "comment": "Lốp chất lượng tốt, giá hợp lý.",
+      "timestamp": "2025-07-07T10:00:00Z"
+    },
+    {
+      "id": "f5",
+      "userId": "u5",
+      "garageId": "g5",
+      "rating": 5,
+      "comment": "Thay dầu nhanh, sạch sẽ.",
+      "timestamp": "2025-07-08T09:00:00Z"
+    },
+    {
+      "id": "f6",
+      "userId": "u6",
+      "garageId": "g6",
+      "rating": 3,
+      "comment": "Sửa động cơ ổn nhưng giá hơi cao.",
+      "timestamp": "2025-07-09T10:30:00Z"
+    },
+    {
+      "id": "f7",
+      "userId": "u7",
+      "garageId": "g7",
+      "rating": 5,
+      "comment": "Rất hài lòng với dịch vụ!",
+      "timestamp": "2025-07-10T09:00:00Z"
+    },
+    {
+      "id": "f8",
+      "userId": "u8",
+      "garageId": "g8",
+      "rating": 4,
+      "comment": "Cân bằng lốp tốt, nhân viên nhiệt tình.",
+      "timestamp": "2025-07-11T10:00:00Z"
+    },
+    {
+      "id": "f9",
+      "userId": "u9",
+      "garageId": "g9",
+      "rating": 2,
+      "comment": "Hủy lịch đột xuất, không báo trước.",
+      "timestamp": "2025-07-12T09:30:00Z"
+    },
+    {
+      "id": "f10",
+      "userId": "u10",
+      "garageId": "g10",
+      "rating": 5,
+      "comment": "Thay dầu nhanh, giá tốt.",
+      "timestamp": "2025-07-13T10:00:00Z"
+    },
+    {
+      "id": "1752351860986",
+      "userId": "u1752350713095",
+      "garageId": "g1",
+      "rating": 2,
+      "comment": "2edwsa"
+    },
+    {
+      "id": 1752425843084,
+      "userId": "u11",
+      "garageId": "g2",
+      "rating": 3,
+      "comment": "VIET HOANG AN CUT"
+    }
+  ],
+  "ChatThreads": [
+    {
+      "id": "c1",
+      "participants": {
+        "userId": "u1",
+        "garageId": "g1"
+      },
+      "messages": [
+        {
+          "sender": "user",
+          "message": "Có thể thay dầu vào 8h sáng mai không?",
+          "timestamp": "2025-07-03T08:00:00Z"
+        },
+        {
+          "sender": "garage",
+          "message": "Được, anh/chị đặt lịch nhé!",
+          "timestamp": "2025-07-03T08:05:00Z"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "participants": {
+        "userId": "u2",
+        "garageId": "g2"
+      },
+      "messages": [
+        {
+          "sender": "user",
+          "message": "Điều hòa xe tôi không mát, kiểm tra được không?",
+          "timestamp": "2025-07-04T09:00:00Z"
+        },
+        {
+          "sender": "garage",
+          "message": "Được, mời anh/chị đến 9h sáng mai.",
+          "timestamp": "2025-07-04T09:05:00Z"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "participants": {
+        "userId": "u3",
+        "garageId": "g3"
+      },
+      "messages": [
+        {
+          "sender": "user",
+          "message": "Thay phanh mất bao lâu?",
+          "timestamp": "2025-07-05T08:00:00Z"
+        },
+        {
+          "sender": "garage",
+          "message": "Khoảng 1 giờ, anh/chị ạ.",
+          "timestamp": "2025-07-05T08:05:00Z"
+        }
+      ]
+    }
+  ],
+  "AdminDashboard": {
+    "Users": [
+      {
+        "id": "u1",
+        "fullName": "Nguyễn Văn An",
+        "email": "an.nguyen@example.com",
+        "phone": "0912345678"
+      },
+      {
+        "id": "u2",
+        "fullName": "Trần Thị Bình",
+        "email": "binh.tran@example.com",
+        "phone": "0913456789"
+      }
+    ],
+    "Garages": [
+      {
+        "id": "g1",
+        "name": "Gara An Phát",
+        "address": "123 Đường Láng, Đống Đa, Hà Nội",
+        "phone": "0901234567"
+      },
+      {
+        "id": "g2",
+        "name": "Gara Minh Tâm",
+        "address": "456 Nguyễn Trãi, Thanh Xuân, Hà Nội",
+        "phone": "0909876543"
+      }
+    ],
+    "Feedback": [
+      {
+        "id": "f1",
+        "userId": "u1",
+        "garageId": "g1",
+        "rating": 5,
+        "comment": "Dịch vụ nhanh chóng, nhân viên thân thiện!"
+      },
+      {
+        "id": "f2",
+        "userId": "u2",
+        "garageId": "g2",
+        "rating": 4,
+        "comment": "Tốt nhưng chờ hơi lâu."
+      }
+    ],
+    "Bookings": [
+      {
+        "id": "b1",
+        "userId": "u1",
+        "garageId": "g1",
+        "serviceType": "Thay dầu",
+        "date": "2025-07-04T00:00:00Z",
+        "status": "confirmed"
+      },
+      {
+        "id": "b2",
+        "userId": "u2",
+        "garageId": "g2",
+        "serviceType": "Sửa điều hòa",
+        "date": "2025-07-05T00:00:00Z",
+        "status": "pending"
+      }
+    ],
+    "ChatLogs": [
+      {
+        "id": "c1",
+        "participants": {
+          "userId": "u1",
+          "garageId": "g1"
+        },
+        "messages": [
+          {
+            "sender": "user",
+            "message": "Có thể thay dầu vào 8h sáng mai không?",
+            "timestamp": "2025-07-03T08:00:00Z"
+          }
+        ]
+      }
+    ],
+    "AdminCredentials": {
+      "email": "admin@example.com",
+      "password": "adminPass123",
+      "role": "admin"
+    }
+  },
+  "UserDashboard": {
+    "Profile": {
+      "id": "u1",
+      "fullName": "Nguyễn Văn An",
+      "email": "an.nguyen@example.com",
+      "phone": "0912345678",
+      "address": "123 Đường Láng, Đống Đa, Hà Nội",
+      "car": {
+        "make": "Toyota",
+        "model": "Vios",
+        "licensePlate": "29A-123.45"
+      }
+    },
+    "Bookings": [
+      {
+        "id": "b1",
+        "garageId": "g1",
+        "serviceType": "Thay dầu",
+        "date": "2025-07-04T00:00:00Z",
+        "time": "08:00",
+        "status": "confirmed"
+      },
+      {
+        "id": "b31",
+        "garageId": "g11",
+        "serviceType": "Thay lốp",
+        "date": "2025-08-03T00:00:00Z",
+        "time": "08:00",
+        "status": "confirmed"
+      }
+    ],
+    "Feedback": [
+      {
+        "id": "f1",
+        "garageId": "g1",
+        "rating": 5,
+        "comment": "Dịch vụ nhanh chóng, nhân viên thân thiện!"
+      }
+    ],
+    "Chats": [
+      {
+        "id": "c1",
+        "garageId": "g1",
+        "messages": [
+          {
+            "sender": "user",
+            "message": "Có thể thay dầu vào 8h sáng mai không?",
+            "timestamp": "2025-07-03T08:00:00Z"
+          },
+          {
+            "sender": "garage",
+            "message": "Được, anh/chị đặt lịch nhé!",
+            "timestamp": "2025-07-03T08:05:00Z"
+          }
+        ]
+      }
+    ]
+  },
+  "GarageDashboard": {
+    "Bookings": [
+      {
+        "id": "b1",
+        "userId": "u1",
+        "serviceType": "Thay dầu",
+        "date": "2025-07-04T00:00:00Z",
+        "time": "08:00",
+        "status": "confirmed"
+      }
+    ],
+    "Feedback": [
+      {
+        "id": "f1",
+        "userId": "u1",
+        "rating": 5,
+        "comment": "Dịch vụ nhanh chóng, nhân viên thân thiện!"
+      }
+    ],
+    "RepairDetails": [
+      {
+        "bookingId": "b1",
+        "serviceType": "Thay dầu",
+        "partsUsed": [
+          "Dầu tổng hợp",
+          "Lọc dầu"
+        ],
+        "duration": "30 phút"
+      }
+    ],
+    "Chats": [
+      {
+        "id": "c1",
+        "userId": "u1",
+        "messages": [
+          {
+            "sender": "user",
+            "message": "Có thể thay dầu vào 8h sáng mai không?",
+            "timestamp": "2025-07-03T08:00:00Z"
+          },
+          {
+            "sender": "garage",
+            "message": "Được, anh/chị đặt lịch nhé!",
+            "timestamp": "2025-07-03T08:05:00Z"
+          }
+        ]
+      }
+    ],
+    "Staff": [
+      {
+        "id": "s1",
+        "name": "Trần Văn Bình",
+        "skills": [
+          "Thay dầu",
+          "Thay lốp"
+        ],
+        "assignedTask": "Thay dầu",
+        "bookingId": "b1"
+      },
+      {
+        "id": "s2",
+        "name": "Lê Thị Mai",
+        "skills": [
+          "Sửa điều hòa",
+          "Thay phanh"
+        ],
+        "assignedTask": "Sửa điều hòa",
+        "bookingId": "b2"
+      }
+    ]
+  }
+}
