@@ -158,10 +158,10 @@ const HomePage = () => {
                   onClick={() => {
                     const user = localStorage.getItem("loggedInUser");
                     if (!user) {
-                      localStorage.setItem("redirectAfterLogin", "/book"); // Ghi nhớ trang cần chuyển sau login
+                      localStorage.setItem("redirectAfterLogin", "/booking"); // Ghi nhớ trang cần chuyển sau login
                       window.location.href = "/login";
                     } else {
-                      window.location.href = "/book";
+                      window.location.href = "/booking";
                     }
                   }}
                 >
@@ -317,7 +317,7 @@ const HomePage = () => {
                   <Card.Footer className="bg-transparent border-0 pt-0">
                     <div className="d-flex justify-content-between">
                       <Button variant="outline-primary" size="sm" as={Link} to={`/garage/${garage.id}`}>Chi tiết</Button>
-                      <Button variant="primary" size="sm" as={Link} to={`/book/${garage.id}`}>Đặt lịch</Button>
+                      <Button variant="primary" size="sm" as={Link} to={`/booking/${garage.id}`}>Đặt lịch</Button>
                     </div>
                   </Card.Footer>
                 </Card>

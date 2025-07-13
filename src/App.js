@@ -10,6 +10,8 @@ import UserDashboard from './UserDashboard'; // Bạn đã tạo file này rồi
 import ForgotPassword from './ForgotPassword';
 import GarageListPage from './GarageListPage';
 import FeedbackPage from './Feedback';
+import BookingForm from './booking';
+
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       <Route path="/garages" element={<GarageListPage />} />
       <Route path="/feedback" element={<FeedbackPage />} />
       
+      <Route path="/booking" element={<BookingForm />} /> // ✅ sửa từ "/book" thành "/booking"
+
 
     </Routes>
   );
