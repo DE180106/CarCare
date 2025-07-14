@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Navbar, Nav, Button, Table, Modal, Alert, Row, Col, Nav as NavBS } from 'react-bootstrap';
+import React, { useState, useEffect, useRef } from 'react';
+import { Container, Navbar, Nav, Button, Table, Modal, Alert, Row, Col, Nav as NavBS, Form, InputGroup } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import data from './data.json'; // Nhập data.json làm nguồn dữ liệu chính
+import data from './data.json'; // Nhập data.json làm nguồn dữ liệu gốc
 
 const GarageDashboard = () => {
   const navigate = useNavigate();
@@ -19,6 +19,8 @@ const GarageDashboard = () => {
   const [showDetailsModal, setShowDetailsModal] = useState(false);
   const [activeTab, setActiveTab] = useState('bookings');
   const [error, setError] = useState('');
+  const [newMessage, setNewMessage] = useState('');
+  const chatContainerRef = useRef(null);
 
   // Kiểm tra quyền garage
   useEffect(() => {
@@ -30,72 +32,134 @@ const GarageDashboard = () => {
     }
   }, [garage, navigate]);
 
-  // Tải dữ liệu từ data.json
+  // Tải dữ liệu từ localStorage hoặc data.json
   useEffect(() => {
     try {
-      // Lọc bookings theo garageId
-      const loadedBookings = data.Bookings.filter(booking => booking.garageId === garage?.id);
+      // Lấy dữ liệu từ localStorage hoặc data.json
+      const storedBookings = JSON.parse(localStorage.getItem('bookings')) || data.Bookings;
+      const loadedBookings = storedBookings.filter(booking => booking.garageId === garage?.id);
       if (!Array.isArray(loadedBookings)) {
-        setError('Dữ liệu lịch đặt trong data.json không hợp lệ.');
+        setError('Dữ liệu lịch đặt không hợp lệ.');
         setBookings([]);
       } else {
         setBookings(loadedBookings);
       }
 
-      // Lọc feedbacks theo garageId
-      const loadedFeedbacks = data.Feedback.filter(feedback => feedback.garageId === garage?.id);
+      const storedFeedbacks = JSON.parse(localStorage.getItem('feedbacks')) || data.Feedback;
+      const loadedFeedbacks = storedFeedbacks.filter(feedback => feedback.garageId === garage?.id);
       if (!Array.isArray(loadedFeedbacks)) {
-        setError(prev => prev + ' Dữ liệu phản hồi trong data.json không hợp lệ.');
+        setError(prev => prev + ' Dữ liệu phản hồi không hợp lệ.');
         setFeedbacks([]);
       } else {
         setFeedbacks(loadedFeedbacks);
       }
 
-      // Lọc repairDetails theo bookings của garage
-      const loadedRepairDetails = data.GarageDashboard.RepairDetails.filter(repair => 
+      const storedRepairDetails = JSON.parse(localStorage.getItem('repairDetails')) || data.GarageDashboard.RepairDetails;
+      const loadedRepairDetails = storedRepairDetails.filter(repair => 
         loadedBookings.some(booking => booking.id === repair.bookingId)
       );
       if (!Array.isArray(loadedRepairDetails)) {
-        setError(prev => prev + ' Dữ liệu chi tiết sửa chữa trong data.json không hợp lệ.');
+        setError(prev => prev + ' Dữ liệu chi tiết sửa chữa không hợp lệ.');
         setRepairDetails([]);
       } else {
         setRepairDetails(loadedRepairDetails);
       }
 
-      // Lọc chatThreads theo garageId
-      const loadedChatThreads = data.ChatThreads.filter(chat => chat.participants.garageId === garage?.id);
+      const storedChatThreads = JSON.parse(localStorage.getItem('chatThreads')) || data.ChatThreads;
+      const loadedChatThreads = storedChatThreads.filter(chat => chat.participants.garageId === garage?.id);
       if (!Array.isArray(loadedChatThreads)) {
-        setError(prev => prev + ' Dữ liệu cuộc trò chuyện trong data.json không hợp lệ.');
+        setError(prev => prev + ' Dữ liệu cuộc trò chuyện không hợp lệ.');
         setChatThreads([]);
       } else {
         setChatThreads(loadedChatThreads);
       }
 
-      // Lấy danh sách nhân viên
-      const loadedStaff = data.GarageDashboard.Staff;
-      if (!Array.isArray(loadedStaff)) {
-        setError(prev => prev + ' Dữ liệu nhân viên trong data.json không hợp lệ.');
+      const storedStaff = JSON.parse(localStorage.getItem('staff')) || data.GarageDashboard.Staff;
+      if (!Array.isArray(storedStaff)) {
+        setError(prev => prev + ' Dữ liệu nhân viên không hợp lệ.');
         setStaff([]);
       } else {
-        setStaff(loadedStaff);
+        setStaff(storedStaff);
       }
     } catch (err) {
-      console.error('Lỗi khi tải dữ liệu từ data.json:', err);
-      setError('Lỗi không xác định khi tải dữ liệu từ data.json.');
+      console.error('Lỗi khi tải dữ liệu:', err);
+      setError('Lỗi không xác định khi tải dữ liệu.');
     }
   }, [garage]);
+
+  // Tự động cuộn xuống cuối khung chat
+  useEffect(() => {
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    }
+  }, [selectedChat]);
 
   // Xử lý cập nhật trạng thái lịch đặt
   const handleUpdateBookingStatus = (bookingId, newStatus) => {
     if (!window.confirm(`Bạn có chắc chắn muốn cập nhật trạng thái lịch đặt ${bookingId} thành ${newStatus}?`)) return;
     try {
-      setBookings(bookings.map(booking => 
+      const updatedBookings = bookings.map(booking => 
         booking.id === bookingId ? { ...booking, status: newStatus } : booking
-      ));
+      );
+      setBookings(updatedBookings);
+      const allBookings = JSON.parse(localStorage.getItem('bookings')) || data.Bookings;
+      const updatedAllBookings = allBookings.map(booking => 
+        booking.id === bookingId ? { ...booking, status: newStatus } : booking
+      );
+      localStorage.setItem('bookings', JSON.stringify(updatedAllBookings));
       alert('Cập nhật trạng thái thành công.');
     } catch (err) {
       console.error('Lỗi khi cập nhật trạng thái:', err);
       setError(`Lỗi khi cập nhật trạng thái: ${err.message}`);
+    }
+  };
+
+  // Xử lý gửi tin nhắn mới
+  const handleSendMessage = (chatId) => {
+    if (!newMessage.trim()) {
+      setError('Vui lòng nhập nội dung tin nhắn.');
+      return;
+    }
+
+    try {
+      const updatedChats = chatThreads.map(chat => {
+        if (chat.id === chatId) {
+          return {
+            ...chat,
+            messages: [
+              ...chat.messages,
+              {
+                sender: 'garage',
+                message: newMessage,
+                timestamp: new Date().toISOString(),
+              },
+            ],
+          };
+        }
+        return chat;
+      });
+      setChatThreads(updatedChats);
+      localStorage.setItem('chatThreads', JSON.stringify(updatedChats));
+      setSelectedChat(updatedChats.find(chat => chat.id === chatId));
+      setNewMessage('');
+    } catch (err) {
+      console.error('Lỗi khi gửi tin nhắn:', err);
+      setError(`Lỗi khi gửi tin nhắn: ${err.message}`);
+    }
+  };
+
+  // Xử lý xóa cuộc trò chuyện
+  const handleDeleteChat = (chatId) => {
+    if (!window.confirm('Bạn có chắc chắn muốn xóa cuộc trò chuyện này?')) return;
+    try {
+      const updatedChats = chatThreads.filter(chat => chat.id !== chatId);
+      setChatThreads(updatedChats);
+      localStorage.setItem('chatThreads', JSON.stringify(updatedChats));
+      setSelectedChat(null);
+      alert('Xóa cuộc trò chuyện thành công.');
+    } catch (err) {
+      console.error('Lỗi khi xóa cuộc trò chuyện:', err);
+      setError(`Lỗi khi xóa cuộc trò chuyện: ${err.message}`);
     }
   };
 
@@ -133,7 +197,7 @@ const GarageDashboard = () => {
     setSelectedFeedback(null);
     setSelectedRepair(null);
     setSelectedStaff(null);
-    setShowDetailsModal(true);
+    setNewMessage('');
   };
 
   const handleViewStaffDetails = (staff) => {
@@ -331,39 +395,95 @@ const GarageDashboard = () => {
 
             {activeTab === 'chats' && (
               <>
-                <h3 className="mt-4">Danh sách trò chuyện</h3>
-                <Table striped bordered hover responsive>
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>ID Người dùng</th>
-                      <th>Tin nhắn mới nhất</th>
-                      <th>Thời gian</th>
-                      <th>Hành động</th>
-                    </tr>
-                  </thead>
-                  <tbody>
+                <h3 className="mt-4">Trò chuyện</h3>
+                <Row>
+                  {/* Danh sách cuộc trò chuyện */}
+                  <Col md={4} className="border-end" style={{ maxHeight: '600px', overflowY: 'auto' }}>
+                    <h5>Danh sách khách hàng</h5>
                     {chatThreads.length === 0 ? (
-                      <tr>
-                        <td colSpan="5" className="text-center">Không tìm thấy cuộc trò chuyện.</td>
-                      </tr>
+                      <p className="text-center">Không có cuộc trò chuyện nào.</p>
                     ) : (
                       chatThreads.map(chat => (
-                        <tr key={chat.id}>
-                          <td>{chat.id}</td>
-                          <td>{chat.participants.userId}</td>
-                          <td>{chat.messages[chat.messages.length - 1]?.message || 'Không có tin nhắn'}</td>
-                          <td>{chat.messages[chat.messages.length - 1]?.timestamp ? new Date(chat.messages[chat.messages.length - 1].timestamp).toLocaleString() : 'Chưa có'}</td>
-                          <td>
-                            <Button variant="info" size="sm" onClick={() => handleViewChatDetails(chat)}>
-                              Xem chi tiết
-                            </Button>
-                          </td>
-                        </tr>
+                        <div
+                          key={chat.id}
+                          className={`p-3 border-bottom ${selectedChat?.id === chat.id ? 'bg-light' : ''}`}
+                          style={{ cursor: 'pointer' }}
+                          onClick={() => handleViewChatDetails(chat)}
+                        >
+                          <strong>ID Người dùng: {chat.participants.userId}</strong>
+                          <p className="mb-0 text-truncate">{chat.messages[chat.messages.length - 1]?.message || 'Không có tin nhắn'}</p>
+                          <small>{chat.messages[chat.messages.length - 1]?.timestamp ? new Date(chat.messages[chat.messages.length - 1].timestamp).toLocaleString() : 'Chưa có'}</small>
+                          <Button
+                            variant="danger"
+                            size="sm"
+                            className="float-end"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleDeleteChat(chat.id);
+                            }}
+                          >
+                            Xóa
+                          </Button>
+                        </div>
                       ))
                     )}
-                  </tbody>
-                </Table>
+                  </Col>
+
+                  {/* Nội dung cuộc trò chuyện */}
+                  <Col md={8}>
+                    {selectedChat ? (
+                      <>
+                        <h5>Trò chuyện với ID: {selectedChat.participants.userId}</h5>
+                        <div
+                          ref={chatContainerRef}
+                          style={{ maxHeight: '500px', overflowY: 'auto', border: '1px solid #ddd', padding: '10px', backgroundColor: '#f9f9f9' }}
+                        >
+                          {selectedChat.messages.map((msg, index) => (
+                            <div
+                              key={index}
+                              className={`mb-2 ${msg.sender === 'garage' ? 'text-end' : 'text-start'}`}
+                            >
+                              <div
+                                style={{
+                                  display: 'inline-block',
+                                  maxWidth: '70%',
+                                  padding: '8px 12px',
+                                  borderRadius: '10px',
+                                  backgroundColor: msg.sender === 'garage' ? '#0084ff' : '#e5e5ea',
+                                  color: msg.sender === 'garage' ? '#fff' : '#000',
+                                }}
+                              >
+                                <p className="mb-0">{msg.message}</p>
+                                <small>{new Date(msg.timestamp).toLocaleString()}</small>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                        <Form
+                          className="mt-3"
+                          onSubmit={(e) => {
+                            e.preventDefault();
+                            handleSendMessage(selectedChat.id);
+                          }}
+                        >
+                          <InputGroup>
+                            <Form.Control
+                              type="text"
+                              placeholder="Nhập tin nhắn..."
+                              value={newMessage}
+                              onChange={(e) => setNewMessage(e.target.value)}
+                            />
+                            <Button variant="primary" type="submit">
+                              Gửi
+                            </Button>
+                          </InputGroup>
+                        </Form>
+                      </>
+                    ) : (
+                      <p className="text-center">Chọn một cuộc trò chuyện để bắt đầu.</p>
+                    )}
+                  </Col>
+                </Row>
               </>
             )}
 
@@ -487,6 +607,20 @@ const GarageDashboard = () => {
             </Modal>
           </Col>
         </Row>
+
+        {/* CSS tùy chỉnh cho giao diện chat */}
+        <style>{`
+          .chat-container::-webkit-scrollbar {
+            width: 8px;
+          }
+          .chat-container::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 4px;
+          }
+          .chat-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+          }
+        `}</style>
       </Container>
     </>
   );
