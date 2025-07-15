@@ -35,8 +35,8 @@ const GarageDashboard = () => {
   // Tải dữ liệu từ localStorage hoặc data.json
   useEffect(() => {
     try {
-      // Lấy dữ liệu từ localStorage hoặc data.json
-      const storedBookings = JSON.parse(localStorage.getItem('bookings')) || data.Bookings;
+      // Kiểm tra và tải dữ liệu lịch đặt
+      const storedBookings = JSON.parse(localStorage.getItem('bookings')) || (data.Bookings && Array.isArray(data.Bookings) ? data.Bookings : []);
       const loadedBookings = storedBookings.filter(booking => booking.garageId === garage?.id);
       if (!Array.isArray(loadedBookings)) {
         setError('Dữ liệu lịch đặt không hợp lệ.');
@@ -45,38 +45,42 @@ const GarageDashboard = () => {
         setBookings(loadedBookings);
       }
 
-      const storedFeedbacks = JSON.parse(localStorage.getItem('feedbacks')) || data.Feedback;
+      // Kiểm tra và tải dữ liệu phản hồi
+      const storedFeedbacks = JSON.parse(localStorage.getItem('feedbacks')) || (data.Feedback && Array.isArray(data.Feedback) ? data.Feedback : []);
       const loadedFeedbacks = storedFeedbacks.filter(feedback => feedback.garageId === garage?.id);
       if (!Array.isArray(loadedFeedbacks)) {
-        setError(prev => prev + ' Dữ liệu phản hồi không hợp lệ.');
+        setError('Dữ liệu phản hồi không hợp lệ.');
         setFeedbacks([]);
       } else {
         setFeedbacks(loadedFeedbacks);
       }
 
-      const storedRepairDetails = JSON.parse(localStorage.getItem('repairDetails')) || data.GarageDashboard.RepairDetails;
+      // Kiểm tra và tải dữ liệu chi tiết sửa chữa
+      const storedRepairDetails = JSON.parse(localStorage.getItem('repairDetails')) || (data.GarageDashboard?.RepairDetails && Array.isArray(data.GarageDashboard.RepairDetails) ? data.GarageDashboard.RepairDetails : []);
       const loadedRepairDetails = storedRepairDetails.filter(repair => 
         loadedBookings.some(booking => booking.id === repair.bookingId)
       );
       if (!Array.isArray(loadedRepairDetails)) {
-        setError(prev => prev + ' Dữ liệu chi tiết sửa chữa không hợp lệ.');
+        setError('Dữ liệu chi tiết sửa chữa không hợp lệ.');
         setRepairDetails([]);
       } else {
         setRepairDetails(loadedRepairDetails);
       }
 
-      const storedChatThreads = JSON.parse(localStorage.getItem('chatThreads')) || data.ChatThreads;
-      const loadedChatThreads = storedChatThreads.filter(chat => chat.participants.garageId === garage?.id);
+      // Kiểm tra và tải dữ liệu cuộc trò chuyện
+      const storedChatThreads = JSON.parse(localStorage.getItem('chatThreads')) || (data.ChatThreads && Array.isArray(data.ChatThreads) ? data.ChatThreads : []);
+      const loadedChatThreads = storedChatThreads.filter(chat => chat.participants?.garageId === garage?.id);
       if (!Array.isArray(loadedChatThreads)) {
-        setError(prev => prev + ' Dữ liệu cuộc trò chuyện không hợp lệ.');
+        setError('Dữ liệu cuộc trò chuyện không hợp lệ.');
         setChatThreads([]);
       } else {
         setChatThreads(loadedChatThreads);
       }
 
-      const storedStaff = JSON.parse(localStorage.getItem('staff')) || data.GarageDashboard.Staff;
+      // Kiểm tra và tải dữ liệu nhân viên
+      const storedStaff = JSON.parse(localStorage.getItem('staff')) || (data.GarageDashboard?.Staff && Array.isArray(data.GarageDashboard.Staff) ? data.GarageDashboard.Staff : []);
       if (!Array.isArray(storedStaff)) {
-        setError(prev => prev + ' Dữ liệu nhân viên không hợp lệ.');
+        setError('Dữ liệu nhân viên không hợp lệ.');
         setStaff([]);
       } else {
         setStaff(storedStaff);
@@ -102,7 +106,7 @@ const GarageDashboard = () => {
         booking.id === bookingId ? { ...booking, status: newStatus } : booking
       );
       setBookings(updatedBookings);
-      const allBookings = JSON.parse(localStorage.getItem('bookings')) || data.Bookings;
+      const allBookings = JSON.parse(localStorage.getItem('bookings')) || (data.Bookings || []);
       const updatedAllBookings = allBookings.map(booking => 
         booking.id === bookingId ? { ...booking, status: newStatus } : booking
       );
@@ -211,7 +215,6 @@ const GarageDashboard = () => {
 
   // Xử lý đăng xuất
   const handleLogout = () => {
-    console.log('Đăng xuất garage...');
     localStorage.removeItem("loggedInUser");
     navigate("/");
   };
@@ -222,10 +225,12 @@ const GarageDashboard = () => {
         <Container>
           <Navbar.Brand>Trang Gara</Navbar.Brand>
           <Nav className="ms-auto">
-            <Nav.Link disabled>
+            <Nav.Link>
               <i className="bi bi-person-circle me-1"></i>{garage?.fullName || 'Gara'}
             </Nav.Link>
-            <Button variant="outline-light" onClick={handleLogout}>Đăng xuất</Button>
+            <Button variant="outline-light" onClick={handleLogout}>
+              Đăng xuất
+            </Button>
           </Nav>
         </Container>
       </Navbar>
@@ -258,9 +263,9 @@ const GarageDashboard = () => {
           <Col md={10}>
             <h2>Chào mừng, {garage?.fullName}!</h2>
             <p>Quản lý lịch đặt, phản hồi, chi tiết sửa chữa, trò chuyện và nhân viên tại đây.</p>
-            <p>Email: {garage?.email}</p>
-            <p>Điện thoại: {garage?.phone}</p>
-            <p>Địa chỉ: {garage?.address}</p>
+            <p><strong>Email:</strong> {garage?.email || 'Không có'}</p>
+            <p><strong>Điện thoại:</strong> {garage?.phone || 'Không có'}</p>
+            <p><strong>Địa chỉ:</strong> {garage?.address || 'Không có'}</p>
 
             {error && <Alert variant="danger">{error}</Alert>}
 
@@ -410,9 +415,9 @@ const GarageDashboard = () => {
                           style={{ cursor: 'pointer' }}
                           onClick={() => handleViewChatDetails(chat)}
                         >
-                          <strong>ID Người dùng: {chat.participants.userId}</strong>
-                          <p className="mb-0 text-truncate">{chat.messages[chat.messages.length - 1]?.message || 'Không có tin nhắn'}</p>
-                          <small>{chat.messages[chat.messages.length - 1]?.timestamp ? new Date(chat.messages[chat.messages.length - 1].timestamp).toLocaleString() : 'Chưa có'}</small>
+                          <strong>ID Người dùng: {chat.participants?.userId || 'Không xác định'}</strong>
+                          <p className="mb-0 text-truncate">{chat.messages?.[chat.messages.length - 1]?.message || 'Không có tin nhắn'}</p>
+                          <small>{chat.messages?.[chat.messages.length - 1]?.timestamp ? new Date(chat.messages[chat.messages.length - 1].timestamp).toLocaleString() : 'Chưa có'}</small>
                           <Button
                             variant="danger"
                             size="sm"
@@ -433,12 +438,13 @@ const GarageDashboard = () => {
                   <Col md={8}>
                     {selectedChat ? (
                       <>
-                        <h5>Trò chuyện với ID: {selectedChat.participants.userId}</h5>
+                        <h5>Trò chuyện với ID: {selectedChat.participants?.userId || 'Không xác định'}</h5>
                         <div
                           ref={chatContainerRef}
+                          className="chat-container"
                           style={{ maxHeight: '500px', overflowY: 'auto', border: '1px solid #ddd', padding: '10px', backgroundColor: '#f9f9f9' }}
                         >
-                          {selectedChat.messages.map((msg, index) => (
+                          {selectedChat.messages?.map((msg, index) => (
                             <div
                               key={index}
                               className={`mb-2 ${msg.sender === 'garage' ? 'text-end' : 'text-start'}`}
@@ -457,7 +463,7 @@ const GarageDashboard = () => {
                                 <small>{new Date(msg.timestamp).toLocaleString()}</small>
                               </div>
                             </div>
-                          ))}
+                          )) || <p>Không có tin nhắn.</p>}
                         </div>
                         <Form
                           className="mt-3"
@@ -572,7 +578,7 @@ const GarageDashboard = () => {
                 ) : selectedChat ? (
                   <>
                     <p><strong>ID:</strong> {selectedChat.id}</p>
-                    <p><strong>ID Người dùng:</strong> {selectedChat.participants.userId}</p>
+                    <p><strong>ID Người dùng:</strong> {selectedChat.participants?.userId || 'Không xác định'}</p>
                     <p><strong>Tin nhắn:</strong></p>
                     <ul>
                       {selectedChat.messages?.map((msg, index) => (

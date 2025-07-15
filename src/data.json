@@ -490,6 +490,31 @@
         "13:00"
       ],
       "imageUrl": "https://example.com/gara19.jpg"
+    },
+    {
+      "id": "g20",
+      "name": "Gara Cầu Giấy",
+      "address": "1515 Xuân Thủy, Cầu Giấy, Hà Nội",
+      "latitude": 21.0384,
+      "longitude": 105.7846,
+      "phone": "0909012346",
+      "services": [
+        "Kiểm tra ắc quy",
+        "Cân bằng lốp",
+        "Sửa động cơ",
+        "Lọc nhiên liệu",
+        "Thay phanh",
+        "Lọc dầu",
+        "Dầu phanh"
+      ],
+      "openingHours": "07:00-17:00",
+      "rating": 4.3,
+      "status": "closed",
+      "availableSlots": [
+        "09:00",
+        "14:00"
+      ],
+      "imageUrl": "https://example.com/gara20.jpg"
     }
   ],
   "Users": [
@@ -897,6 +922,34 @@
         "make": "Kia",
         "model": "Rio",
         "licensePlate": "29B-456.78"
+      }
+    },
+    {
+      "id": "u30",
+      "fullName": "Trần Thị Gấm",
+      "email": "gam.tran@example.com",
+      "phone": "0941234567",
+      "address": "2525 Nguyễn Văn Cừ, Long Biên, Hà Nội",
+      "password": "hashedPass890",
+      "avatarUrl": "https://example.com/avatar30.jpg",
+      "car": {
+        "make": "Mazda",
+        "model": "2",
+        "licensePlate": "30A-789.01"
+      }
+    },
+    {
+      "id": "u1752350713095",
+      "fullName": "Pham Ngoc",
+      "email": "phamngoc0045@gmail.com",
+      "phone": "123456789",
+      "address": "87 East 2580 South",
+      "password": "11112222",
+      "avatarUrl": "a",
+      "car": {
+        "make": "a",
+        "model": "a",
+        "licensePlate": "a"
       }
     },
     {
@@ -1520,6 +1573,16 @@
       "serviceType": "Thay dầu, Thay lốp",
       "status": "pending",
       "note": "adasdasdas"
+    },
+    {
+      "id": "b43",
+      "userId": "u18",
+      "garageId": "g1",
+      "date": "2025-07-23T00:00:00.000Z",
+      "time": "08:00",
+      "serviceType": "Thay dầu",
+      "status": "pending",
+      "note": ""
     }
   ],
   "Feedback": [

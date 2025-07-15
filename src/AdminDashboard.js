@@ -34,48 +34,43 @@ const AdminDashboard = () => {
   useEffect(() => {
     try {
       // Kiểm tra và gán dữ liệu người dùng
-      const loadedUsers = data.Users.filter(user => !user.role || user.role !== 'garage');
-      if (!Array.isArray(loadedUsers)) {
+      if (!data.Users || !Array.isArray(data.Users)) {
         setError('Dữ liệu người dùng trong data.json không hợp lệ.');
         setUsers([]);
       } else {
-        setUsers(loadedUsers);
+        setUsers(data.Users.filter(user => !user.role || user.role !== 'garage'));
       }
 
       // Kiểm tra và gán dữ liệu garage
-      const loadedGarages = data.Garages;
-      if (!Array.isArray(loadedGarages)) {
-        setError(prev => prev + ' Dữ liệu garage trong data.json không hợp lệ.');
+      if (!data.Garages || !Array.isArray(data.Garages)) {
+        setError('Dữ liệu garage trong data.json không hợp lệ.');
         setGarages([]);
       } else {
-        setGarages(loadedGarages);
+        setGarages(data.Garages);
       }
 
       // Kiểm tra và gán dữ liệu đặt lịch
-      const loadedBookings = data.Bookings;
-      if (!Array.isArray(loadedBookings)) {
-        setError(prev => prev + ' Dữ liệu đặt lịch trong data.json không hợp lệ.');
+      if (!data.Bookings || !Array.isArray(data.Bookings)) {
+        setError('Dữ liệu đặt lịch trong data.json không hợp lệ.');
         setBookings([]);
       } else {
-        setBookings(loadedBookings);
+        setBookings(data.Bookings);
       }
 
       // Kiểm tra và gán dữ liệu feedback
-      const loadedFeedbacks = data.Feedback;
-      if (!Array.isArray(loadedFeedbacks)) {
-        setError(prev => prev + ' Dữ liệu feedback trong data.json không hợp lệ.');
+      if (!data.Feedback || !Array.isArray(data.Feedback)) {
+        setError('Dữ liệu feedback trong data.json không hợp lệ.');
         setFeedbacks([]);
       } else {
-        setFeedbacks(loadedFeedbacks);
+        setFeedbacks(data.Feedback);
       }
 
       // Kiểm tra và gán dữ liệu lịch sử sửa chữa
-      const loadedRepairDetails = data.GarageDashboard.RepairDetails;
-      if (!Array.isArray(loadedRepairDetails)) {
-        setError(prev => prev + ' Dữ liệu lịch sử sửa chữa trong data.json không hợp lệ.');
+      if (!data.GarageDashboard?.RepairDetails || !Array.isArray(data.GarageDashboard.RepairDetails)) {
+        setError('Dữ liệu lịch sử sửa chữa trong data.json không hợp lệ.');
         setRepairDetails([]);
       } else {
-        setRepairDetails(loadedRepairDetails);
+        setRepairDetails(data.GarageDashboard.RepairDetails);
       }
     } catch (err) {
       console.error('Lỗi khi tải dữ liệu từ data.json:', err);
@@ -183,7 +178,6 @@ const AdminDashboard = () => {
 
   // Xử lý đăng xuất
   const handleLogout = () => {
-    console.log('Đăng xuất admin...');
     localStorage.removeItem("loggedInUser");
     navigate("/");
   };
@@ -194,7 +188,7 @@ const AdminDashboard = () => {
         <Container>
           <Navbar.Brand>Trang Quản Trị</Navbar.Brand>
           <Nav className="ms-auto">
-            <Nav.Link disabled>
+            <Nav.Link>
               <i className="bi bi-person-circle me-1"></i>{admin?.fullName || 'Quản trị viên'}
             </Nav.Link>
             <Button variant="outline-light" onClick={handleLogout}>Đăng xuất</Button>
