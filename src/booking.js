@@ -507,11 +507,10 @@ const BookingForm = () => {
           <h2 className="text-center mb-4">Đặt Lịch Dịch Vụ</h2>
           {statusMessage && (
             <div
-              className={`alert ${
-                statusMessage.includes("thành công")
+              className={`alert ${statusMessage.includes("thành công")
                   ? "alert-success"
                   : "alert-danger"
-              } text-center mb-4`}
+                } text-center mb-4`}
               role="alert"
             >
               {statusMessage}
@@ -536,9 +535,8 @@ const BookingForm = () => {
                       name="fullName"
                       value={formData.fullName}
                       onChange={handleChange}
-                      className={`form-control ${
-                        errors.fullName ? "is-invalid" : ""
-                      }`}
+                      className={`form-control ${errors.fullName ? "is-invalid" : ""
+                        }`}
                       maxLength="80"
                       placeholder="Nhập họ và tên"
                       required
@@ -561,9 +559,8 @@ const BookingForm = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className={`form-control ${
-                      errors.phone ? "is-invalid" : ""
-                    }`}
+                    className={`form-control ${errors.phone ? "is-invalid" : ""
+                      }`}
                     maxLength="10"
                     placeholder="Nhập số điện thoại (10 số)"
                     required
@@ -582,9 +579,8 @@ const BookingForm = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`form-control ${
-                      errors.email ? "is-invalid" : ""
-                    }`}
+                    className={`form-control ${errors.email ? "is-invalid" : ""
+                      }`}
                     maxLength="80"
                     placeholder="vidu@gmail.com"
                     required
@@ -608,9 +604,8 @@ const BookingForm = () => {
                     id="productModel"
                     value={formData.productModel}
                     onChange={handleChange}
-                    className={`form-control ${
-                      errors.productModel ? "is-invalid" : ""
-                    }`}
+                    className={`form-control ${errors.productModel ? "is-invalid" : ""
+                      }`}
                     required
                   >
                     <option value="">Chọn mẫu xe</option>
@@ -649,9 +644,8 @@ const BookingForm = () => {
                     name="licensePlate"
                     value={formData.licensePlate}
                     onChange={handleChange}
-                    className={`form-control ${
-                      errors.licensePlate ? "is-invalid" : ""
-                    }`}
+                    className={`form-control ${errors.licensePlate ? "is-invalid" : ""
+                      }`}
                     maxLength="10"
                     placeholder="Nhập biển số xe"
                     required
@@ -726,9 +720,8 @@ const BookingForm = () => {
                     id="garageId"
                     value={formData.garageId}
                     onChange={handleChange}
-                    className={`form-control ${
-                      errors.garageId ? "is-invalid" : ""
-                    }`}
+                    className={`form-control ${errors.garageId ? "is-invalid" : ""
+                      }`}
                     required
                     disabled={formData.services.length === 0}
                   >
@@ -765,9 +758,8 @@ const BookingForm = () => {
                         name="scheduleDate"
                         value={formData.scheduleDate}
                         onChange={handleChange}
-                        className={`form-control ${
-                          errors.scheduleDate ? "is-invalid" : ""
-                        }`}
+                        className={`form-control ${errors.scheduleDate ? "is-invalid" : ""
+                          }`}
                         min={new Date().toISOString().split("T")[0]}
                         required
                       />
@@ -783,9 +775,8 @@ const BookingForm = () => {
                         name="scheduleTime"
                         value={formData.scheduleTime}
                         onChange={handleChange}
-                        className={`form-control ${
-                          errors.scheduleTime ? "is-invalid" : ""
-                        }`}
+                        className={`form-control ${errors.scheduleTime ? "is-invalid" : ""
+                          }`}
                         required
                         disabled={!formData.garageId || !formData.scheduleDate}
                       >

@@ -67,7 +67,7 @@ const HomePage = () => {
           setLocation(`${position.coords.latitude}, ${position.coords.longitude}`);
         },
         () => {
-          setLocation('Hà Nội'); 
+          setLocation('Hà Nội');
         }
       );
     } else {
@@ -87,7 +87,7 @@ const HomePage = () => {
           name: garage.name,
           address: garage.address,
           rating: Math.round(garage.rating) || 0,
-          yearsActive: Math.floor(Math.random() * 10) + 5, 
+          yearsActive: Math.floor(Math.random() * 10) + 5,
           services: garage.services || [],
           image: garage.imageUrl || `https://via.placeholder.com/300x200?text=${garage.name}`,
           description: 'Chuyên nghiệp, uy tín, giá cả hợp lý.'
@@ -298,7 +298,11 @@ const HomePage = () => {
           <div className="d-flex justify-content-between align-items-center mb-4">
             <h2 className="fw-bold mb-0">Garage uy tín</h2>
             <div className="d-flex gap-2">
-              <Link to="/garages" className="btn btn-link">Xem tất cả</Link>
+              <Button variant="primary" as={Link} to="/garages">
+                <i className="bi bi-eye me-2"></i>
+                Xem tất cả
+              </Button>
+
               <Button
                 variant="success"
                 onClick={() => {
@@ -355,7 +359,7 @@ const HomePage = () => {
                         Xem đánh giá
                       </Button>
                       <Button variant="outline-primary" size="sm" as={Link} to={`/garage/${garage.id}`}>Chi tiết</Button>
-                      <Button variant="primary" size="sm" as={Link} to={`/booking/${garage.id}`}>Đặt lịch</Button>
+
                     </div>
                   </Card.Footer>
                 </Card>
