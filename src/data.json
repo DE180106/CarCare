@@ -182,7 +182,7 @@
         "10:00",
         "13:00"
       ],
-      "imageUrl": "https://example.com/gara7.jpg"
+      "imageUrl": "https://caron.vn/wp-content/uploads/2023/08/image-21.png"
     },
     {
       "id": "g8",
@@ -207,7 +207,7 @@
         "09:00",
         "14:00"
       ],
-      "imageUrl": "https://example.com/gara8.jpg"
+      "imageUrl": "https://thietbig20.vn/media/news/0806_kinh-nghiem-mo-gara-o-to-dat-khach.jpg"
     },
     {
       "id": "g9",
@@ -233,7 +233,7 @@
         "10:30",
         "15:30"
       ],
-      "imageUrl": "https://example.com/gara9.jpg"
+      "imageUrl": "https://shitekdetailing.com/uploads/images/mo-gara-o-to.jpg"
     },
     {
       "id": "g10",
@@ -258,7 +258,7 @@
         "11:00",
         "14:00"
       ],
-      "imageUrl": "https://example.com/gara10.jpg"
+      "imageUrl": "https://file.hstatic.net/200000718719/article/trang_thiet_bi_gara_o_to_d06c7f78c63446ee8ebbfd51e71da132.jpg"
     },
     {
       "id": "g11",
@@ -284,7 +284,7 @@
         "10:00",
         "13:00"
       ],
-      "imageUrl": "https://example.com/gara11.jpg"
+      "imageUrl": "https://camnangcuocsong.edu.vn/wp-content/uploads/2024/04/gara-o-to-ha-noi-3.jpg"
     },
     {
       "id": "g12",
@@ -309,7 +309,7 @@
         "09:00",
         "14:00"
       ],
-      "imageUrl": "https://example.com/gara12.jpg"
+      "imageUrl": "https://oto.edu.vn/wp-content/uploads/2020/04/su-that-dang-so-khi-lam-chu-gara-o-to-1.jpg"
     },
     {
       "id": "g13",
@@ -335,7 +335,7 @@
         "10:30",
         "15:30"
       ],
-      "imageUrl": "https://example.com/gara13.jpg"
+      "imageUrl": "https://ranone.vn/wp-content/uploads/2024/08/Garage-Ranone-Auto-03-EDIT.jpg"
     },
     {
       "id": "g14",
@@ -360,7 +360,7 @@
         "11:00",
         "14:00"
       ],
-      "imageUrl": "https://example.com/gara14.jpg"
+      "imageUrl": "https://tunganhauto.com/wp-content/uploads/2019/06/gara-sua-chua-o-to-tot-1-1202x800.jpg"
     },
     {
       "id": "g15",
@@ -386,7 +386,7 @@
         "10:00",
         "13:00"
       ],
-      "imageUrl": "https://example.com/gara15.jpg"
+      "imageUrl": "https://bienquangcaohl.com.vn/wp-content/uploads/2023/09/bien-quang-cao-gara-oto-5.jpg"
     },
     {
       "id": "g16",
@@ -411,7 +411,7 @@
         "09:00",
         "14:00"
       ],
-      "imageUrl": "https://example.com/gara16.jpg"
+      "imageUrl": "https://giahuyad.com/upload/news/image001-3365.png"
     },
     {
       "id": "g17",
@@ -437,7 +437,7 @@
         "10:30",
         "15:30"
       ],
-      "imageUrl": "https://example.com/gara17.jpg"
+      "imageUrl": "https://megacar.com.vn/wp-content/uploads/2020/04/gara-o-to-binh-thanh-megacar-1.jpg"
     },
     {
       "id": "g18",
@@ -463,7 +463,7 @@
         "11:00",
         "14:00"
       ],
-      "imageUrl": "https://example.com/gara18.jpg"
+      "imageUrl": "https://garaoto.net/wp-content/uploads/2020/05/IMG_20200430_172911.jpg"
     },
     {
       "id": "g19",
@@ -489,7 +489,7 @@
         "10:00",
         "13:00"
       ],
-      "imageUrl": "https://example.com/gara19.jpg"
+      "imageUrl": "https://bmtcogi.com/wp-content/uploads/2019/10/tong-hop-gara-sua-chua-o-to-uy-tin-va-chat-luong-o-buon-ma-thuot-bmtcogi.com-1.jpg"
     },
     {
       "id": "g20",
@@ -514,8 +514,427 @@
         "09:00",
         "14:00"
       ],
-      "imageUrl": "https://example.com/gara20.jpg"
-    }
+      "imageUrl": "https://datlichbaoduong.com/wp-content/uploads/2020/07/dich-vu-sua-chua-o-to-z1-auto-center-215140.jpg"
+    },
+    {
+    "id": "g21",
+    "name": "Garage Thạch Thất 1",
+    "address": "Thạch Hòa, Thạch Thất, Hà Nội",
+    "latitude": 21.037,
+    "longitude": 105.5,
+    "phone": "0901000021",
+    "services": ["Thay dầu", "Sửa động cơ", "Kiểm tra ắc quy"],
+    "openingHours": "08:00-18:00",
+    "rating": 4.5,
+    "status": "open",
+    "availableSlots": ["08:00", "10:00", "14:00"],
+    "imageUrl": "https://example.com/thachthat1.jpg"
+  },
+  {
+    "id": "g22",
+    "name": "Garage Thạch Thất 2",
+    "address": "Bình Yên, Thạch Thất, Hà Nội",
+    "latitude": 21.01,
+    "longitude": 105.51,
+    "phone": "0901000022",
+    "services": ["Thay dầu", "Sửa động cơ", "Kiểm tra ắc quy"],
+    "openingHours": "08:00-18:00",
+    "rating": 4.5,
+    "status": "open",
+    "availableSlots": ["08:00", "10:00", "14:00"],
+    "imageUrl": "https://example.com/thachthat2.jpg"
+  },
+  {
+    "id": "g23",
+    "name": "Garage Thạch Thất 3",
+    "address": "Cẩm Yên, Thạch Thất, Hà Nội",
+    "latitude": 21.02,
+    "longitude": 105.52,
+    "phone": "0901000023",
+    "services": ["Thay dầu", "Sửa động cơ", "Kiểm tra ắc quy"],
+    "openingHours": "08:00-18:00",
+    "rating": 4.5,
+    "status": "open",
+    "availableSlots": ["08:00", "10:00", "14:00"],
+    "imageUrl": "https://example.com/thachthat3.jpg"
+  },
+  {
+    "id": "g24",
+    "name": "Garage Đà Nẵng",
+    "address": "Hải Châu, Đà Nẵng",
+    "latitude": 10.0,
+    "longitude": 106.0,
+    "phone": "0901000024",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage24.jpg"
+  },
+  {
+    "id": "g25",
+    "name": "Garage TP. HCM",
+    "address": "Quận 1, TP. HCM",
+    "latitude": 10.1,
+    "longitude": 106.1,
+    "phone": "0901000025",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage25.jpg"
+  },
+  {
+    "id": "g26",
+    "name": "Garage Cần Thơ",
+    "address": "Ninh Kiều, Cần Thơ",
+    "latitude": 10.2,
+    "longitude": 106.2,
+    "phone": "0901000026",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage26.jpg"
+  },
+  {
+    "id": "g27",
+    "name": "Garage Vũng Tàu",
+    "address": "TP. Vũng Tàu",
+    "latitude": 10.3,
+    "longitude": 106.3,
+    "phone": "0901000027",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage27.jpg"
+  },
+  {
+    "id": "g28",
+    "name": "Garage Hải Phòng",
+    "address": "Ngô Quyền, Hải Phòng",
+    "latitude": 10.4,
+    "longitude": 106.4,
+    "phone": "0901000028",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage28.jpg"
+  },
+  {
+    "id": "g29",
+    "name": "Garage Bắc Ninh",
+    "address": "TP. Bắc Ninh",
+    "latitude": 10.5,
+    "longitude": 106.5,
+    "phone": "0901000029",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage29.jpg"
+  },
+  {
+    "id": "g30",
+    "name": "Garage Thanh Hóa",
+    "address": "TP. Thanh Hóa",
+    "latitude": 10.6,
+    "longitude": 106.6,
+    "phone": "0901000030",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage30.jpg"
+  },{
+    "id": "g31",
+    "name": "Garage Nghệ An",
+    "address": "Vinh, Nghệ An",
+    "latitude": 10.7,
+    "longitude": 106.7,
+    "phone": "0901000031",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage31.jpg"
+  },
+  {
+    "id": "g32",
+    "name": "Garage Huế",
+    "address": "TP. Huế",
+    "latitude": 10.8,
+    "longitude": 106.8,
+    "phone": "0901000032",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage32.jpg"
+  },
+  {
+    "id": "g33",
+    "name": "Garage Nha Trang",
+    "address": "TP. Nha Trang",
+    "latitude": 10.9,
+    "longitude": 106.9,
+    "phone": "0901000033",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage33.jpg"
+  },
+  {
+    "id": "g34",
+    "name": "Garage Buôn Ma Thuột",
+    "address": "Đắk Lắk",
+    "latitude": 11.0,
+    "longitude": 107.0,
+    "phone": "0901000034",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage34.jpg"
+  },
+  {
+    "id": "g35",
+    "name": "Garage Đà Lạt",
+    "address": "Lâm Đồng",
+    "latitude": 11.1,
+    "longitude": 107.1,
+    "phone": "0901000035",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage35.jpg"
+  },
+  {
+    "id": "g36",
+    "name": "Garage Bình Dương",
+    "address": "Thủ Dầu Một, Bình Dương",
+    "latitude": 11.2,
+    "longitude": 107.2,
+    "phone": "0901000036",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage36.jpg"
+  },
+  {
+    "id": "g37",
+    "name": "Garage Tây Ninh",
+    "address": "TP. Tây Ninh",
+    "latitude": 11.3,
+    "longitude": 107.3,
+    "phone": "0901000037",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage37.jpg"
+  },
+  {
+    "id": "g38",
+    "name": "Garage Kiên Giang",
+    "address": "Rạch Giá, Kiên Giang",
+    "latitude": 11.4,
+    "longitude": 107.4,
+    "phone": "0901000038",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage38.jpg"
+  },
+  {
+    "id": "g39",
+    "name": "Garage Sóc Trăng",
+    "address": "TP. Sóc Trăng",
+    "latitude": 11.5,
+    "longitude": 107.5,
+    "phone": "0901000039",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage39.jpg"
+  },
+  {
+    "id": "g40",
+    "name": "Garage Vĩnh Long",
+    "address": "TP. Vĩnh Long",
+    "latitude": 11.6,
+    "longitude": 107.6,
+    "phone": "0901000040",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage40.jpg"
+  },
+  {
+    "id": "g41",
+    "name": "Garage Long An",
+    "address": "Tân An, Long An",
+    "latitude": 11.7,
+    "longitude": 107.7,
+    "phone": "0901000041",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage41.jpg"
+  },
+  {
+    "id": "g42",
+    "name": "Garage Quảng Ninh",
+    "address": "Hạ Long, Quảng Ninh",
+    "latitude": 11.8,
+    "longitude": 107.8,
+    "phone": "0901000042",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage42.jpg"
+  },
+  {
+    "id": "g43",
+    "name": "Garage Bắc Giang",
+    "address": "TP. Bắc Giang",
+    "latitude": 11.9,
+    "longitude": 107.9,
+    "phone": "0901000043",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage43.jpg"
+  },
+  {
+    "id": "g44",
+    "name": "Garage Hà Tĩnh",
+    "address": "TP. Hà Tĩnh",
+    "latitude": 12.0,
+    "longitude": 108.0,
+    "phone": "0901000044",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage44.jpg"
+  },
+  {
+    "id": "g45",
+    "name": "Garage Quảng Ngãi",
+    "address": "TP. Quảng Ngãi",
+    "latitude": 12.1,
+    "longitude": 108.1,
+    "phone": "0901000045",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage45.jpg"
+  },
+  {
+    "id": "g46",
+    "name": "Garage Phan Thiết",
+    "address": "TP. Phan Thiết",
+    "latitude": 12.2,
+    "longitude": 108.2,
+    "phone": "0901000046",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage46.jpg"
+  },
+  {
+    "id": "g47",
+    "name": "Garage Trà Vinh",
+    "address": "TP. Trà Vinh",
+    "latitude": 12.3,
+    "longitude": 108.3,
+    "phone": "0901000047",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage47.jpg"
+  },
+  {
+    "id": "g48",
+    "name": "Garage Thái Nguyên",
+    "address": "TP. Thái Nguyên",
+    "latitude": 12.4,
+    "longitude": 108.4,
+    "phone": "0901000048",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage48.jpg"
+  },
+  {
+    "id": "g49",
+    "name": "Garage Cao Bằng",
+    "address": "TP. Cao Bằng",
+    "latitude": 12.5,
+    "longitude": 108.5,
+    "phone": "0901000049",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "closed",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage49.jpg"
+  },
+  {
+    "id": "g50",
+    "name": "Garage Tuyên Quang",
+    "address": "TP. Tuyên Quang",
+    "latitude": 12.6,
+    "longitude": 108.6,
+    "phone": "0901000050",
+    "services": ["Thay lốp", "Sửa điều hòa", "Cân bằng lốp"],
+    "openingHours": "07:30-17:30",
+    "rating": 4.4,
+    "status": "open",
+    "availableSlots": ["09:00", "11:00", "15:00"],
+    "imageUrl": "https://example.com/garage50.jpg"
+  }
   ],
   "Users": [
     {

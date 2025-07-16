@@ -14,6 +14,7 @@ import FeedbackPage from './Feedback';
 import BookingForm from './booking';
 import BookingHistory from './BookingHistory';
 
+
 // Import các trang quản trị và garage
 import AdminDashboard from './AdminDashboard';
 import GarageDashboard from './GarageDashboard';
@@ -22,6 +23,7 @@ import GarageReviews from './GarageReviews';
 // Import các trang phụ
 import StoreSystem from './map';
 import Contact from './userschat';
+import AboutPage from './AboutPage';
 
 function App() {
   return (
@@ -47,6 +49,7 @@ function App() {
       {/* Trang phụ */}
       <Route path="/map" element={<StoreSystem />} />
       <Route path="/userschat/:garageId" element={<Contact />} />
+      <Route path="/about" element={<AboutPage />} />
     </Routes>
   );
 }
