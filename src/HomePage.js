@@ -7,7 +7,7 @@ import data from './data.json'; // Import data.json
 // Style trong JavaScript bằng object styles
 const styles = {
   heroSection: {
-    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://via.placeholder.com/1200x400?text=Hero+Image")',
+    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://lp-auto-assets.s3.amazonaws.com/21/Lamborghini/aventador/t3/header.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     color: 'white',
