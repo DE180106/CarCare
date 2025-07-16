@@ -7,7 +7,7 @@ import data from './data.json'; // Import data.json
 // Style trong JavaScript bằng object styles
 const styles = {
   heroSection: {
-    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://via.placeholder.com/1200x400?text=Hero+Image")',
+    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://lp-auto-assets.s3.amazonaws.com/21/Lamborghini/aventador/t3/header.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     color: 'white',
@@ -67,7 +67,7 @@ const HomePage = () => {
           setLocation(`${position.coords.latitude}, ${position.coords.longitude}`);
         },
         () => {
-          setLocation('Hà Nội'); // Mặc định là Hà Nội nếu không lấy được vị trí
+          setLocation('Hà Nội'); 
         }
       );
     } else {
@@ -78,7 +78,6 @@ const HomePage = () => {
   // Tải dữ liệu garage và feedback từ data.json
   useEffect(() => {
     try {
-      // Kiểm tra và tải dữ liệu garage
       if (!data.Garages || !Array.isArray(data.Garages)) {
         setError('Dữ liệu garage trong data.json không hợp lệ.');
         setFeaturedGarages([]);
@@ -88,7 +87,7 @@ const HomePage = () => {
           name: garage.name,
           address: garage.address,
           rating: Math.round(garage.rating) || 0,
-          yearsActive: Math.floor(Math.random() * 10) + 5, // Giả lập, thay bằng dữ liệu thực nếu có
+          yearsActive: Math.floor(Math.random() * 10) + 5, 
           services: garage.services || [],
           image: garage.imageUrl || `https://via.placeholder.com/300x200?text=${garage.name}`,
           description: 'Chuyên nghiệp, uy tín, giá cả hợp lý.'
@@ -116,15 +115,13 @@ const HomePage = () => {
     }
   }, []);
 
-  // Xử lý tìm kiếm
+  // tìm kiếm
   const handleSearch = (e) => {
     e.preventDefault();
     alert(`Tìm kiếm garage tại: ${location || 'tất cả khu vực'} cho dịch vụ: ${serviceType || 'tất cả dịch vụ'}`);
-    // Có thể thêm logic chuyển hướng tới trang garages với query params
     // navigate(`/garages?location=${encodeURIComponent(location)}&service=${encodeURIComponent(serviceType)}`);
   };
-
-  // Xử lý đăng xuất
+  //đăng xuất
   const handleLogout = () => {
     localStorage.removeItem('loggedInUser');
     setLoggedInUser(null);
