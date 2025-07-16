@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Card, Carousel, Navbar, Nav, Button, Form } from 'react-bootstrap';
+import { Container, Row, Col, Card, Carousel, Navbar, Nav, Button, Form, Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import data from './data.json'; // Import data.json
-import Header from './components/Header';
-
 
 // Style trong JavaScript bằng object styles
 const styles = {
   heroSection: {
-    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://via.placeholder.com/1200x400?text=Hero+Image")', // Thay URL nếu có hình thực tế
+    backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://lp-auto-assets.s3.amazonaws.com/21/Lamborghini/aventador/t3/header.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     color: 'white',
@@ -43,28 +41,17 @@ const popularServices = [
   { name: 'Đồng sơn', desc: 'Sửa chữa và phục hồi sơn xe chuyên nghiệp' }
 ];
 
-// Lấy dữ liệu từ data.json
-const featuredGarages = data.Garages.slice(0, 6).map(garage => ({
-  id: garage.id,
-  name: garage.name,
-  address: garage.address,
-  rating: Math.round(garage.rating), // Làm tròn rating
-  yearsActive: Math.floor(Math.random() * 10) + 5, // Giả lập, thay bằng dữ liệu thực nếu có
-  services: garage.services,
-  image: garage.imageUrl || `https://via.placeholder.com/300x200?text=${garage.name}`, // Dùng placeholder nếu imageUrl không hợp lệ
-  description: 'Chuyên nghiệp, uy tín, giá cả hợp lý.'
-}));
-
-const testimonials = data.Feedback.slice(0, 5).map(feedback => ({
-  id: feedback.id,
-  name: data.Users.find(user => user.id === feedback.userId)?.fullName || `Khách hàng ${feedback.userId}`,
-  comment: feedback.comment,
-  rating: feedback.rating,
-  avatar: data.Users.find(user => user.id === feedback.userId)?.avatarUrl || `https://via.placeholder.com/80?text=User+${feedback.userId}`
-}));
-
 const HomePage = () => {
+  const navigate = useNavigate();
   const [loggedInUser, setLoggedInUser] = useState(null);
+  const [location, setLocation] = useState('');
+  const [serviceType, setServiceType] = useState('');
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [featuredGarages, setFeaturedGarages] = useState([]);
+  const [testimonials, setTestimonials] = useState([]);
+  const [error, setError] = useState('');
+
+  // Tải dữ liệu người dùng từ localStorage
   useEffect(() => {
     const storedUser = localStorage.getItem('loggedInUser');
     if (storedUser) {
@@ -72,10 +59,7 @@ const HomePage = () => {
     }
   }, []);
 
-  const [location, setLocation] = useState('');
-  const [serviceType, setServiceType] = useState('');
-  const [activeIndex, setActiveIndex] = useState(0);
-
+  // Tải vị trí người dùng
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -83,17 +67,68 @@ const HomePage = () => {
           setLocation(`${position.coords.latitude}, ${position.coords.longitude}`);
         },
         () => {
-          setLocation('Hà Nội'); // Thay đổi mặc định thành Hà Nội
+          setLocation('Hà Nội'); 
         }
       );
+    } else {
+      setLocation('Hà Nội');
     }
   }, []);
 
+  // Tải dữ liệu garage và feedback từ data.json
+  useEffect(() => {
+    try {
+      if (!data.Garages || !Array.isArray(data.Garages)) {
+        setError('Dữ liệu garage trong data.json không hợp lệ.');
+        setFeaturedGarages([]);
+      } else {
+        const garages = data.Garages.slice(0, 6).map(garage => ({
+          id: garage.id,
+          name: garage.name,
+          address: garage.address,
+          rating: Math.round(garage.rating) || 0,
+          yearsActive: Math.floor(Math.random() * 10) + 5, 
+          services: garage.services || [],
+          image: garage.imageUrl || `https://via.placeholder.com/300x200?text=${garage.name}`,
+          description: 'Chuyên nghiệp, uy tín, giá cả hợp lý.'
+        }));
+        setFeaturedGarages(garages);
+      }
+
+      // Kiểm tra và tải dữ liệu feedback
+      if (!data.Feedback || !Array.isArray(data.Feedback) || !data.Users || !Array.isArray(data.Users)) {
+        setError('Dữ liệu feedback hoặc users trong data.json không hợp lệ.');
+        setTestimonials([]);
+      } else {
+        const feedbackData = data.Feedback.slice(0, 5).map(feedback => ({
+          id: feedback.id,
+          name: data.Users.find(user => user.id === feedback.userId)?.fullName || `Khách hàng ${feedback.userId}`,
+          comment: feedback.comment,
+          rating: feedback.rating || 0,
+          avatar: data.Users.find(user => user.id === feedback.userId)?.avatarUrl || `https://via.placeholder.com/80?text=User+${feedback.userId}`
+        }));
+        setTestimonials(feedbackData);
+      }
+    } catch (err) {
+      console.error('Lỗi khi tải dữ liệu từ data.json:', err);
+      setError('Lỗi không xác định khi tải dữ liệu.');
+    }
+  }, []);
+
+  // tìm kiếm
   const handleSearch = (e) => {
     e.preventDefault();
     alert(`Tìm kiếm garage tại: ${location || 'tất cả khu vực'} cho dịch vụ: ${serviceType || 'tất cả dịch vụ'}`);
+    // navigate(`/garages?location=${encodeURIComponent(location)}&service=${encodeURIComponent(serviceType)}`);
+  };
+  //đăng xuất
+  const handleLogout = () => {
+    localStorage.removeItem('loggedInUser');
+    setLoggedInUser(null);
+    navigate('/');
   };
 
+  // Render sao đánh giá
   const renderStars = (rating) => {
     return Array(5).fill().map((_, i) => (
       <i
@@ -105,7 +140,43 @@ const HomePage = () => {
 
   return (
     <div>
-      <Header />
+      {/* Navbar */}
+      <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+        <Container>
+          <Navbar.Brand as={Link} to="/" className="fw-bold">
+            <i className="bi bi-car-front-fill me-2"></i>
+            CarCare
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link as={Link} to="/" active>Trang chủ</Nav.Link>
+              <Nav.Link as={Link} to="/garages">Garage</Nav.Link>
+              <Nav.Link as={Link} to="/map">Tìm Gara</Nav.Link>
+              <Nav.Link as={Link} to="/services">Dịch vụ</Nav.Link>
+              <Nav.Link as={Link} to="/about">Giới thiệu</Nav.Link>
+              <Nav.Link as={Link} to="/contact">Liên hệ</Nav.Link>
+              <Nav.Link as={Link} to="/booking">Đặt lịch</Nav.Link>
+              <Nav.Link as={Link} to="/booking/history">Lịch sử đặt lịch</Nav.Link>
+              {loggedInUser ? (
+                <>
+                  <Nav.Link className="text-light">
+                    <i className="bi bi-person-circle me-1"></i>{loggedInUser.fullName}
+                  </Nav.Link>
+                  <Button variant="outline-light" className="ms-2" onClick={handleLogout}>
+                    Đăng xuất
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button variant="outline-light" className="ms-2" as={Link} to="/login">Đăng nhập</Button>
+                  <Button variant="primary" className="ms-2" as={Link} to="/register">Đăng ký</Button>
+                </>
+              )}
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
       {/* Hero Section */}
       <section style={styles.heroSection}>
@@ -121,12 +192,10 @@ const HomePage = () => {
                   variant="primary"
                   size="lg"
                   onClick={() => {
-                    const user = localStorage.getItem("loggedInUser");
-                    if (!user) {
-                      localStorage.setItem("redirectAfterLogin", "/book"); // Ghi nhớ trang cần chuyển sau login
-                      window.location.href = "/login";
+                    if (!loggedInUser) {
+                      navigate('/login', { state: { redirectTo: '/booking' } });
                     } else {
-                      window.location.href = "/book";
+                      navigate('/booking');
                     }
                   }}
                 >
@@ -145,7 +214,7 @@ const HomePage = () => {
       <section className="mb-5">
         <Container>
           <Card className="shadow-sm border-0">
-            <Card.Body className="p-5"> {/* Sửa lỗi typo "generar5" thành "p-5" */}
+            <Card.Body className="p-5">
               <Form onSubmit={handleSearch}>
                 <Row>
                   <Col md={5}>
@@ -234,9 +303,9 @@ const HomePage = () => {
                 variant="success"
                 onClick={() => {
                   if (!loggedInUser) {
-                    alert("Bạn cần đăng nhập để gửi đánh giá.");
+                    navigate('/login', { state: { redirectTo: '/feedback' } });
                   } else {
-                    window.location.href = "/feedback";
+                    navigate('/feedback');
                   }
                 }}
               >
@@ -245,6 +314,7 @@ const HomePage = () => {
             </div>
           </div>
 
+          {error && <Alert variant="danger">{error}</Alert>}
 
           <Row>
             {featuredGarages.map((garage) => (
@@ -281,8 +351,11 @@ const HomePage = () => {
                   </Card.Body>
                   <Card.Footer className="bg-transparent border-0 pt-0">
                     <div className="d-flex justify-content-between">
+                      <Button variant="outline-secondary" size="sm" as={Link} to={`/garage/${garage.id}/reviews`}>
+                        Xem đánh giá
+                      </Button>
                       <Button variant="outline-primary" size="sm" as={Link} to={`/garage/${garage.id}`}>Chi tiết</Button>
-                      <Button variant="primary" size="sm" as={Link} to={`/book/${garage.id}`}>Đặt lịch</Button>
+                      <Button variant="primary" size="sm" as={Link} to={`/booking/${garage.id}`}>Đặt lịch</Button>
                     </div>
                   </Card.Footer>
                 </Card>
@@ -297,7 +370,7 @@ const HomePage = () => {
         <Container>
           <h2 className="text-center mb-5 fw-bold">Khách hàng nói về chúng tôi</h2>
 
-          <Carousel activeIndex={activeIndex} onSelect={setActiveIndex} indicadores={false}>
+          <Carousel activeIndex={activeIndex} onSelect={setActiveIndex} indicators={false}>
             {testimonials.map((testimonial) => (
               <Carousel.Item key={testimonial.id}>
                 <div className="text-center px-5" style={{ maxWidth: '800px', margin: '0 auto' }}>
@@ -348,6 +421,7 @@ const HomePage = () => {
                 <li><Link to="/" className="text-white text-decoration-none">Trang chủ</Link></li>
                 <li><Link to="/services" className="text-white text-decoration-none">Dịch vụ</Link></li>
                 <li><Link to="/garages" className="text-white text-decoration-none">Garage</Link></li>
+                <li><Link to="/contact" className="text-white text-decoration-none">Liên hệ</Link></li>
               </ul>
             </Col>
             <Col md={3}>

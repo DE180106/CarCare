@@ -10,27 +10,41 @@ const LoginPage = () => {
   const [errorMsg, setErrorMsg] = useState('');
 
   const handleLogin = (e) => {
-    e.preventDefault();
-    const matchedUser = data.Users.find(
-      (user) => user.email === email && user.password === password
-    );
+  e.preventDefault();
 
-    if (!matchedUser) {
-      setErrorMsg('Email hoặc mật khẩu không chính xác.');
-    } else {
-      // Lưu thông tin đăng nhập vào localStorage
-      localStorage.setItem('loggedInUser', JSON.stringify(matchedUser));
+  // Check Admin
+  const adminCredentials = data.AdminDashboard?.AdminCredentials;
+  if (
+    email === adminCredentials?.email &&
+    password === adminCredentials?.password
+  ) {
+    const adminUser = {
+      email: adminCredentials.email,
+      role: "admin",
+      fullName: "Quản trị viên"
+    };
+    localStorage.setItem("loggedInUser", JSON.stringify(adminUser));
+    navigate("/admin/dashboard");
+    return;
+  }
 
-      // Xác định đường dẫn chuyển hướng
-      let redirectTo = localStorage.getItem("redirectAfterLogin");
-      if (!redirectTo) {
-        redirectTo = matchedUser.role === "garage" ? "/garage/dashboard" : "/user/dashboard";
-      }
+  // Check User or Garage (đều nằm trong Users)
+  const matchedUser = data.Users.find(
+    (user) => user.email === email && user.password === password
+  );
 
-      localStorage.removeItem("redirectAfterLogin");
-      navigate(redirectTo);
-    }
-  };
+  if (!matchedUser) {
+    setErrorMsg("Email hoặc mật khẩu không chính xác.");
+  } else {
+    const role = matchedUser.role === "garage" ? "garage" : "user";
+    localStorage.setItem("loggedInUser", JSON.stringify({ ...matchedUser, role }));
+    const redirectPath =
+      role === "garage" ? "/garage/dashboard" : "/user/dashboard";
+    navigate(redirectPath);
+  }
+};
+
+
 
   return (
     <Container className="py-5">
@@ -68,8 +82,13 @@ const LoginPage = () => {
             </div>
 
             <div className="text-center">
-              <p>Chưa có tài khoản? <Link to="/register">Đăng ký ngay</Link></p>
-              <p><Link to="/forgot-password">Quên mật khẩu?</Link></p>
+              <p>
+                Chưa có tài khoản?{' '}
+                <Link to="/register">Đăng ký ngay</Link>
+              </p>
+              <p>
+                <Link to="/forgot-password">Quên mật khẩu?</Link>
+              </p>
             </div>
           </Form>
         </Col>

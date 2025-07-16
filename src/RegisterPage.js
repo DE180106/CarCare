@@ -11,45 +11,36 @@ const RegisterPage = () => {
     address: '',
     password: '',
     avatarUrl: '',
-    role: 'user', // Mặc định là user
     carMake: '',
     carModel: '',
     licensePlate: ''
   });
 
-  const [preview, setPreview] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
   const [successMsg, setSuccessMsg] = useState('');
 
   const handleChange = (e) => {
-    const { name, value, files } = e.target;
-
-    if (name === 'avatarFile') {
-      const file = files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          setPreview(reader.result);
-          setFormData(prev => ({ ...prev, avatarUrl: reader.result }));
-        };
-        reader.readAsDataURL(file);
-      }
-    } else {
-      setFormData(prev => ({ ...prev, [name]: value }));
-    }
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Validate đơn giản
     if (!formData.fullName || !formData.email || !formData.phone || !formData.password) {
       setErrorMsg('Vui lòng điền đầy đủ các trường bắt buộc.');
       return;
     }
 
     const newUser = {
-      id: `u${Date.now()}`,
-      ...formData,
+      id: `u${Date.now()}`, // Tạo ID duy nhất
+      fullName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      address: formData.address,
+      password: formData.password,
+      avatarUrl: formData.avatarUrl,
       car: {
         make: formData.carMake,
         model: formData.carModel,
@@ -57,22 +48,22 @@ const RegisterPage = () => {
       }
     };
 
-    try {
-      const res = await fetch('http://localhost:9999/Users', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newUser)
-      });
-
-      if (res.ok) {
-        setSuccessMsg('Đăng ký thành công! Đang chuyển đến trang đăng nhập...');
-        setTimeout(() => navigate('/login'), 1500);
-      } else {
-        setErrorMsg('Đăng ký thất bại. Vui lòng thử lại.');
-      }
-    } catch (err) {
-      setErrorMsg('Có lỗi khi gửi yêu cầu.');
-    }
+    fetch('http://localhost:9999/Users', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(newUser)
+    })
+      .then(res => {
+        if (res.ok) {
+          setSuccessMsg('Đăng ký thành công! Chuyển đến trang đăng nhập...');
+          setTimeout(() => {
+            navigate('/login');
+          }, 1500);
+        } else {
+          setErrorMsg('Đăng ký thất bại. Vui lòng thử lại.');
+        }
+      })
+      .catch(() => setErrorMsg('Có lỗi xảy ra khi gửi yêu cầu.'));
   };
 
   return (
@@ -102,29 +93,20 @@ const RegisterPage = () => {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                  <Form.Label>Mật khẩu</Form.Label>
-                  <Form.Control type="password" name="password" value={formData.password} onChange={handleChange} required />
+                  <Form.Label>Địa chỉ</Form.Label>
+                  <Form.Control type="text" name="address" value={formData.address} onChange={handleChange} />
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                  <Form.Label>Vai trò</Form.Label>
-                  <Form.Select name="role" value={formData.role} onChange={handleChange}>
-                    <option value="user">Người dùng</option>
-                    <option value="garage">Gara</option>
-                    <option value="admin">Quản trị viên</option>
-                  </Form.Select>
+                  <Form.Label>Mật khẩu</Form.Label>
+                  <Form.Control type="password" name="password" value={formData.password} onChange={handleChange} required />
                 </Form.Group>
               </Col>
 
               <Col md={6}>
                 <Form.Group className="mb-3">
-                  <Form.Label>Ảnh đại diện</Form.Label>
-                  <Form.Control type="file" name="avatarFile" accept="image/*" onChange={handleChange} />
-                  {preview && (
-                    <div className="mt-2">
-                      <img src={preview} alt="Preview" height="100" className="rounded" />
-                    </div>
-                  )}
+                  <Form.Label>Link ảnh đại diện</Form.Label>
+                  <Form.Control type="text" name="avatarUrl" value={formData.avatarUrl} onChange={handleChange} />
                 </Form.Group>
 
                 <Form.Group className="mb-3">

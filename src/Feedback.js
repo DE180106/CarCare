@@ -1,62 +1,89 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import data from './data.json'; // Nhập data.json làm nguồn dữ liệu chính
 
 const FeedbackPage = () => {
   const navigate = useNavigate();
   const [garages, setGarages] = useState([]);
+  const [feedbacks, setFeedbacks] = useState([]); // Lưu trữ feedback tạm thời
   const [garageId, setGarageId] = useState('');
   const [rating, setRating] = useState('');
   const [comment, setComment] = useState('');
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
   const user = JSON.parse(localStorage.getItem("loggedInUser"));
 
+  // Tự động xóa thông báo sau 5 giây
   useEffect(() => {
-    // Lấy danh sách garage
-    fetch("http://localhost:9999/Garages")
-      .then(res => res.json())
-      .then(data => setGarages(data))
-      .catch(err => console.error("Lỗi tải garage:", err));
+    if (error || success) {
+      const timer = setTimeout(() => {
+        setError('');
+        setSuccess('');
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [error, success]);
+
+  // Tải danh sách garage từ data.json
+  useEffect(() => {
+    try {
+      if (!data.Garages || !Array.isArray(data.Garages)) {
+        setError('Dữ liệu garage trong data.json không hợp lệ.');
+        setGarages([]);
+      } else {
+        setGarages(data.Garages);
+      }
+    } catch (err) {
+      console.error('Lỗi khi tải garage từ data.json:', err);
+      setError('Lỗi không xác định khi tải dữ liệu garage.');
+    }
   }, []);
 
+  // Xử lý gửi feedback
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!user) {
-      setError("Bạn cần đăng nhập để gửi đánh giá.");
+    // Kiểm tra người dùng đã đăng nhập
+    if (!user || !user.id) {
+      setError('Bạn cần đăng nhập để gửi đánh giá.');
       return;
     }
 
+    // Kiểm tra dữ liệu đầu vào
     if (!garageId || !rating || !comment) {
-      setError("Vui lòng điền đầy đủ thông tin.");
+      setError('Vui lòng điền đầy đủ thông tin.');
       return;
     }
 
-    const feedback = {
-      id: Date.now(),
+    // Kiểm tra rating hợp lệ
+    const ratingValue = parseInt(rating);
+    if (isNaN(ratingValue) || ratingValue < 1 || ratingValue > 5) {
+      setError('Đánh giá phải từ 1 đến 5 sao.');
+      return;
+    }
+
+    const newFeedback = {
+      id: Date.now().toString(),
       userId: user.id,
       garageId,
-      rating: parseInt(rating),
-      comment
+      rating: ratingValue,
+      comment,
+      timestamp: new Date().toISOString(),
     };
 
-    fetch("http://localhost:9999/Feedback", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(feedback)
-    })
-      .then(res => {
-        if (res.ok) {
-          alert("Gửi đánh giá thành công!");
-          navigate("/");
-        } else {
-          setError("Gửi đánh giá thất bại.");
-        }
-      })
-      .catch(err => {
-        console.error("Lỗi khi gửi:", err);
-        setError("Có lỗi xảy ra khi gửi đánh giá.");
-      });
+    try {
+      // Lưu feedback vào state
+      setFeedbacks([...feedbacks, newFeedback]);
+      setSuccess('Gửi đánh giá thành công!');
+      setGarageId('');
+      setRating('');
+      setComment('');
+      setTimeout(() => navigate('/'), 2000); // Chuyển hướng sau 2 giây
+    } catch (err) {
+      console.error('Lỗi khi lưu feedback:', err);
+      setError('Có lỗi xảy ra khi gửi đánh giá.');
+    }
   };
 
   return (
@@ -64,6 +91,7 @@ const FeedbackPage = () => {
       <h2 className="mb-4">Gửi đánh giá Garage</h2>
 
       {error && <Alert variant="danger">{error}</Alert>}
+      {success && <Alert variant="success">{success}</Alert>}
 
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
@@ -87,6 +115,7 @@ const FeedbackPage = () => {
             value={rating}
             onChange={(e) => setRating(e.target.value)}
             required
+            placeholder="Nhập số từ 1 đến 5"
           />
         </Form.Group>
 
