@@ -1570,7 +1570,308 @@
       "address": "Số 20, Trương Định, Hà Nội",
       "avatarUrl": "https://via.placeholder.com/80?text=G20",
       "role": "garage"
-    }
+    },
+    
+  {
+    "id": "g21",
+    "fullName": "Garage Thạch Thất 1",
+    "email": "garage21@carcare.vn",
+    "password": "123456",
+    "phone": "0901000021",
+    "address": "Số 21, Thạch Thất, Hà Nội",
+    "avatarUrl": "https://via.placeholder.com/80?text=G21",
+    "role": "garage"
+  },
+  {
+    "id": "g22",
+    "fullName": "Garage Thạch Thất 2",
+    "email": "garage22@carcare.vn",
+    "password": "123456",
+    "phone": "0901000022",
+    "address": "Số 22, Thạch Thất, Hà Nội",
+    "avatarUrl": "https://via.placeholder.com/80?text=G22",
+    "role": "garage"
+  },
+  {
+    "id": "g23",
+    "fullName": "Garage Thạch Thất 3",
+    "email": "garage23@carcare.vn",
+    "password": "123456",
+    "phone": "0901000023",
+    "address": "Số 23, Thạch Thất, Hà Nội",
+    "avatarUrl": "https://via.placeholder.com/80?text=G23",
+    "role": "garage"
+  },
+  {
+    "id": "g24",
+    "fullName": "Garage Đà Nẵng",
+    "email": "garage24@carcare.vn",
+    "password": "123456",
+    "phone": "0901000024",
+    "address": "Số 24, Đà Nẵng",
+    "avatarUrl": "https://via.placeholder.com/80?text=G24",
+    "role": "garage"
+  },
+  {
+    "id": "g25",
+    "fullName": "Garage TP. HCM",
+    "email": "garage25@carcare.vn",
+    "password": "123456",
+    "phone": "0901000025",
+    "address": "Số 25, TP. HCM",
+    "avatarUrl": "https://via.placeholder.com/80?text=G25",
+    "role": "garage"
+  },
+  {
+    "id": "g26",
+    "fullName": "Garage Cần Thơ",
+    "email": "garage26@carcare.vn",
+    "password": "123456",
+    "phone": "0901000026",
+    "address": "Số 26, Cần Thơ",
+    "avatarUrl": "https://via.placeholder.com/80?text=G26",
+    "role": "garage"
+  },
+  {
+    "id": "g27",
+    "fullName": "Garage Vũng Tàu",
+    "email": "garage27@carcare.vn",
+    "password": "123456",
+    "phone": "0901000027",
+    "address": "Số 27, Vũng Tàu",
+    "avatarUrl": "https://via.placeholder.com/80?text=G27",
+    "role": "garage"
+  },
+  {
+    "id": "g28",
+    "fullName": "Garage Hải Phòng",
+    "email": "garage28@carcare.vn",
+    "password": "123456",
+    "phone": "0901000028",
+    "address": "Số 28, Hải Phòng",
+    "avatarUrl": "https://via.placeholder.com/80?text=G28",
+    "role": "garage"
+  },
+  {
+    "id": "g29",
+    "fullName": "Garage Bắc Ninh",
+    "email": "garage29@carcare.vn",
+    "password": "123456",
+    "phone": "0901000029",
+    "address": "Số 29, Bắc Ninh",
+    "avatarUrl": "https://via.placeholder.com/80?text=G29",
+    "role": "garage"
+  },
+  {
+    "id": "g30",
+    "fullName": "Garage Thanh Hóa",
+    "email": "garage30@carcare.vn",
+    "password": "123456",
+    "phone": "0901000030",
+    "address": "Số 30, Thanh Hóa",
+    "avatarUrl": "https://via.placeholder.com/80?text=G30",
+    "role": "garage"
+  },
+  {
+    "id": "g31",
+    "fullName": "Garage Nghệ An",
+    "email": "garage31@carcare.vn",
+    "password": "123456",
+    "phone": "0901000031",
+    "address": "Số 31, Nghệ An",
+    "avatarUrl": "https://via.placeholder.com/80?text=G31",
+    "role": "garage"
+  },
+  {
+    "id": "g32",
+    "fullName": "Garage Huế",
+    "email": "garage32@carcare.vn",
+    "password": "123456",
+    "phone": "0901000032",
+    "address": "Số 32, Huế",
+    "avatarUrl": "https://via.placeholder.com/80?text=G32",
+    "role": "garage"
+  },
+  {
+    "id": "g33",
+    "fullName": "Garage Nha Trang",
+    "email": "garage33@carcare.vn",
+    "password": "123456",
+    "phone": "0901000033",
+    "address": "Số 33, Nha Trang",
+    "avatarUrl": "https://via.placeholder.com/80?text=G33",
+    "role": "garage"
+  },
+  {
+    "id": "g34",
+    "fullName": "Garage Buôn Ma Thuột",
+    "email": "garage34@carcare.vn",
+    "password": "123456",
+    "phone": "0901000034",
+    "address": "Số 34, Buôn Ma Thuột",
+    "avatarUrl": "https://via.placeholder.com/80?text=G34",
+    "role": "garage"
+  },
+  {
+    "id": "g35",
+    "fullName": "Garage Đà Lạt",
+    "email": "garage35@carcare.vn",
+    "password": "123456",
+    "phone": "0901000035",
+    "address": "Số 35, Đà Lạt",
+    "avatarUrl": "https://via.placeholder.com/80?text=G35",
+    "role": "garage"
+  },
+  {
+    "id": "g36",
+    "fullName": "Garage Bình Dương",
+    "email": "garage36@carcare.vn",
+    "password": "123456",
+    "phone": "0901000036",
+    "address": "Số 36, Bình Dương",
+    "avatarUrl": "https://via.placeholder.com/80?text=G36",
+    "role": "garage"
+  },
+  {
+    "id": "g37",
+    "fullName": "Garage Tây Ninh",
+    "email": "garage37@carcare.vn",
+    "password": "123456",
+    "phone": "0901000037",
+    "address": "Số 37, Tây Ninh",
+    "avatarUrl": "https://via.placeholder.com/80?text=G37",
+    "role": "garage"
+  },
+  {
+    "id": "g38",
+    "fullName": "Garage Kiên Giang",
+    "email": "garage38@carcare.vn",
+    "password": "123456",
+    "phone": "0901000038",
+    "address": "Số 38, Kiên Giang",
+    "avatarUrl": "https://via.placeholder.com/80?text=G38",
+    "role": "garage"
+  },
+  {
+    "id": "g39",
+    "fullName": "Garage Sóc Trăng",
+    "email": "garage39@carcare.vn",
+    "password": "123456",
+    "phone": "0901000039",
+    "address": "Số 39, Sóc Trăng",
+    "avatarUrl": "https://via.placeholder.com/80?text=G39",
+    "role": "garage"
+  },
+  {
+    "id": "g40",
+    "fullName": "Garage Vĩnh Long",
+    "email": "garage40@carcare.vn",
+    "password": "123456",
+    "phone": "0901000040",
+    "address": "Số 40, Vĩnh Long",
+    "avatarUrl": "https://via.placeholder.com/80?text=G40",
+    "role": "garage"
+  },
+  {
+    "id": "g41",
+    "fullName": "Garage Long An",
+    "email": "garage41@carcare.vn",
+    "password": "123456",
+    "phone": "0901000041",
+    "address": "Số 41, Long An",
+    "avatarUrl": "https://via.placeholder.com/80?text=G41",
+    "role": "garage"
+  },
+  {
+    "id": "g42",
+    "fullName": "Garage Quảng Ninh",
+    "email": "garage42@carcare.vn",
+    "password": "123456",
+    "phone": "0901000042",
+    "address": "Số 42, Quảng Ninh",
+    "avatarUrl": "https://via.placeholder.com/80?text=G42",
+    "role": "garage"
+  },
+  {
+    "id": "g43",
+    "fullName": "Garage Bắc Giang",
+    "email": "garage43@carcare.vn",
+    "password": "123456",
+    "phone": "0901000043",
+    "address": "Số 43, Bắc Giang",
+    "avatarUrl": "https://via.placeholder.com/80?text=G43",
+    "role": "garage"
+  },
+  {
+    "id": "g44",
+    "fullName": "Garage Hà Tĩnh",
+    "email": "garage44@carcare.vn",
+    "password": "123456",
+    "phone": "0901000044",
+    "address": "Số 44, Hà Tĩnh",
+    "avatarUrl": "https://via.placeholder.com/80?text=G44",
+    "role": "garage"
+  },
+  {
+    "id": "g45",
+    "fullName": "Garage Quảng Ngãi",
+    "email": "garage45@carcare.vn",
+    "password": "123456",
+    "phone": "0901000045",
+    "address": "Số 45, Quảng Ngãi",
+    "avatarUrl": "https://via.placeholder.com/80?text=G45",
+    "role": "garage"
+  },
+  {
+    "id": "g46",
+    "fullName": "Garage Phan Thiết",
+    "email": "garage46@carcare.vn",
+    "password": "123456",
+    "phone": "0901000046",
+    "address": "Số 46, Phan Thiết",
+    "avatarUrl": "https://via.placeholder.com/80?text=G46",
+    "role": "garage"
+  },
+  {
+    "id": "g47",
+    "fullName": "Garage Trà Vinh",
+    "email": "garage47@carcare.vn",
+    "password": "123456",
+    "phone": "0901000047",
+    "address": "Số 47, Trà Vinh",
+    "avatarUrl": "https://via.placeholder.com/80?text=G47",
+    "role": "garage"
+  },
+  {
+    "id": "g48",
+    "fullName": "Garage Thái Nguyên",
+    "email": "garage48@carcare.vn",
+    "password": "123456",
+    "phone": "0901000048",
+    "address": "Số 48, Thái Nguyên",
+    "avatarUrl": "https://via.placeholder.com/80?text=G48",
+    "role": "garage"
+  },
+  {
+    "id": "g49",
+    "fullName": "Garage Cao Bằng",
+    "email": "garage49@carcare.vn",
+    "password": "123456",
+    "phone": "0901000049",
+    "address": "Số 49, Cao Bằng",
+    "avatarUrl": "https://via.placeholder.com/80?text=G49",
+    "role": "garage"
+  },
+  {
+    "id": "g50",
+    "fullName": "Garage Tuyên Quang",
+    "email": "garage50@carcare.vn",
+    "password": "123456",
+    "phone": "0901000050",
+    "address": "Số 50, Tuyên Quang",
+    "avatarUrl": "https://via.placeholder.com/80?text=G50",
+    "role": "garage"
+  }
   ],
   "Bookings": [
     {
