@@ -24,6 +24,8 @@ import GarageReviews from './GarageReviews';
 import StoreSystem from './map';
 import Contact from './userschat';
 import AboutPage from './AboutPage';
+import ServicesPage from './ServicesPage';
+
 
 function App() {
   return (
@@ -50,6 +52,8 @@ function App() {
       <Route path="/map" element={<StoreSystem />} />
       <Route path="/userschat/:garageId" element={<Contact />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/services" element={<ServicesPage />} />
+
     </Routes>
   );
 }
